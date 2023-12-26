@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: perspectus.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: bib/xilin_bib_modified.bib
+I was expecting a `,' or a `}'---line 1273 of file bib/xilin_bib_modified.bib
+ :   
+ :   volume={2},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 13 entries,
+            4087 wiz_defined-function locations,
+            1539 strings with 19893 characters,
+and the built_in function-call counts, 9589 in all, are:
+= -- 774
+> -- 219
+< -- 86
++ -- 126
+- -- 36
+* -- 455
+:= -- 1440
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 11
+chr.to.int$ -- 195
+cite$ -- 13
+duplicate$ -- 683
+empty$ -- 750
+format.name$ -- 46
+if$ -- 2230
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 116
+newline$ -- 62
+num.names$ -- 13
+pop$ -- 258
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 744
+stack$ -- 0
+substring$ -- 466
+swap$ -- 573
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 13
+warning$ -- 0
+while$ -- 40
+width$ -- 15
+write$ -- 144
+(There was 1 error message)
