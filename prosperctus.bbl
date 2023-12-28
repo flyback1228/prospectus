@@ -69,6 +69,10 @@ S.~H. Kim, H.-S. Chang, C.-H. Shih, N.~K. Uppalapati, U.~Halder, G.~Krishnan,
 R.~Levien, ``The elastica: a mathematical history,'' EECS Department,
   University of California, Berkeley, Tech. Rep. UCB/EECS-2008-103, Aug 2008.
 
+\bibitem{prautzsch2002bezier}
+H.~Prautzsch, W.~Boehm, and M.~Paluszny, \emph{B{\'e}zier and B-spline
+  techniques}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2002, vol.~6.
+
 \bibitem{LOT20147559}
 R.~Lot and F.~Biral, ``A curvilinear abscissa approach for the lap time
   optimization of racing vehicles,'' \emph{IFAC Proceedings Volumes}, vol.~47,
@@ -78,9 +82,5 @@ R.~Lot and F.~Biral, ``A curvilinear abscissa approach for the lap time
 A.~Liniger, A.~Domahidi, and M.~Morari, ``Optimization-based autonomous racing
   of 1:43 scale {RC} cars,'' \emph{Optim. Control Appl. Methods}, vol.~36,
   no.~5, pp. 628--647, jul 2014.
-
-\bibitem{prautzsch2002bezier}
-H.~Prautzsch, W.~Boehm, and M.~Paluszny, \emph{B{\'e}zier and B-spline
-  techniques}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2002, vol.~6.
 
 \end{thebibliography}

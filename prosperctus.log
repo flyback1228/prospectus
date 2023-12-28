@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  25 DEC 2023 23:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  28 DEC 2023 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./perspectus.tex
-(perspectus.tex
+**./prosperctus.tex
+(prosperctus.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (IEEEtran.cls
@@ -692,12 +692,12 @@ tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box75
-) (perspectus.aux
+) (prosperctus.aux
 
 LaTeX Warning: Label `quality' multiply defined.
 
 )
-\openout1 = `perspectus.aux'.
+\openout1 = `prosperctus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
@@ -933,10 +933,10 @@ LaTeX Warning: Reference `searchselection' on page 8 undefined on input line 64
 LaTeX Warning: Reference `searchselection' on page 8 undefined on input line 64
 1.
 
-[8 <./figs/globalroute-eps-converted-to.pdf>] (perspectus.bbl) [9
+[8 <./figs/globalroute-eps-converted-to.pdf>] (prosperctus.bbl) [9
 
 ]
-(perspectus.aux)
+(prosperctus.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -951,12 +951,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  10188 strings out of 475248
- 172739 string characters out of 5757812
+ 172715 string characters out of 5757812
  1952785 words of memory out of 5000000
  31498 multiletter control sequences out of 15000+600000
  601607 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,21n,117p,1575b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,21n,117p,1576b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx7.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/pu
@@ -983,7 +983,7 @@ w/times/utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/ur
 w/times/utmbi8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on perspectus.pdf (9 pages, 496581 bytes).
+Output written on prosperctus.pdf (9 pages, 496583 bytes).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
