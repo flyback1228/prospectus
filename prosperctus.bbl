@@ -41,6 +41,17 @@ B.~Paden, M.~Cap, S.~Z. Yong, D.~Yershov, and E.~Frazzoli, ``A survey of motion
 M.~Meywerk, \emph{Vehicle dynamics}.\hskip 1em plus 0.5em minus 0.4em\relax
   John Wiley \& Sons, 2015.
 
+\bibitem{pacejka2012tire}
+H.~Pacejka and I.~Besselink, \emph{Tire and Vehicle Dynamics}.\hskip 1em plus
+  0.5em minus 0.4em\relax Elsevier Science, 2012.
+
+\bibitem{matlabvehicldocumentation}
+\BIBentryALTinterwordspacing
+T.~M. Inc., ``Tire-road interaction,'' Natick, Massachusetts, United States,
+  2022. [Online]. Available:
+  \url{https://https://www.mathworks.com/help/sdl/ref/tireroadinteractionmagicformula.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{lavalle1998rapidly}
 S.~M. LaValle, ``Rapidly-exploring random trees: A new tool for path
   planning,'' \emph{Computer Science Dept. Oct.}, vol.~98, no.~11, 1998.

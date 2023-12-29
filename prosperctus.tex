@@ -98,7 +98,19 @@ Rewrite Eq.(\ref{2_wheel_model}) to
 \end{equation}
 where $x \in \mathcal{X}$ is the state, belonging to a n-dimensional manifold $\mathcal{X}$(the state space), and $u=[\delta_{\tt dot},F_{f,x},F_{r,x}]^T \in \mathcal{U}$ is the control input. The preceding formulation can include both nonholonomic and dynamic constraints. 
 
-The vehicle uses rubber tires and the motion heavily depends on the tire-road interaction forces. The longitudinal friction forces are functions of the slip ratios, namely, $F_{ix} = \mu_x F_{i,z},i=f,r$ where $\mu_x$ is the longitudinal friction coefficient, which is a function of the longitude slip ratios $\lambda_i$. Similarly, The lateral friction forces are functions of the slip angle, namely, $F_{ix} = \mu_y F_{iz},i=f,r$ with lateral friction coefficient $\mu_y(\alpha_i)$, where $\alpha_i,i=f,r$ are the slip angles shown as in Fig.\ref{fig:2_wheel}.
+The vehicle uses rubber tires and the motion heavily depends on the tire-road interaction forces, the model of which are one of the most important part of the dynamics. The longitudinal friction forces are functions of the slip ratios, namely, $F_{ix} = \mu_x F_{i,z},i=f,r$ where $\mu_x$ is the longitudinal friction coefficient, which is a function of the longitude slip ratios $\lambda_i$. Similarly, The lateral friction forces are functions of the slip angle, namely, $F_{ix} = \mu_y F_{iz},i=f,r$ with lateral friction coefficient $\mu_y(\alpha_i)$, where $\alpha_i,i=f,r$ are the slip angles shown as in Fig.\ref{fig:2_wheel}.
+
+The coupling effect between the longitudinal and lateral
+friction forces is modeled as the friction circle. With $F_{ix}$ and $F_{iy}$, the friction circle is captured as $\sqrt{F_{ix}^2+F_{iy}^2}  < \mu F_{iz}$, where $\mu$ is the total friction coefficient. For both $\mu_x$ q and $\mu_y$, we use the Pacejka’s magic formula\cite{pacejka2012tire}
+\begin{equation}\label{magicformula}	
+	\mu(x)=D_t\sin\left(C_t\tan^{-1}\left(B_t(1-E_t)x+E_t\tan^{-1}(B_tx)\right)\right)
+\end{equation}
+where the variable is $\lambda_i$ or $\alpha_i$, and model parameters $B_t$, $C_t$, $D_t$, and $E_t$ are obtained through matching with experiments.
+
+For most regular ground surface, the value of parameter $E_t$ is between 0.97 and 1.0\cite{matlabvehicldocumentation}, to speed up the computation, the Eq.(\ref{magicformula}) then can be simplified as:  
+\begin{equation}\label{simplemagicformula}	
+	\mu(x)=D_t\sin\left(C_t\tan^{-1}B_tx\right)
+\end{equation}
 
 \subsection{Motion Planning}
 The motion-planning problem can be stated as follows: given an initial state $x_0 \in \mathcal{X}$ , at time $t_0$, and a goal equilibrium configuration $x_f$, find a set of control inputs $ u:[t_0; t_f] \in \mathcal{U}$ that can drive the agent from $x_0$ to $x_f$. Although the usual formulation of the motion-planning problem is concerned only with finding a feasible trajectory, in this project we are also interested in finding a trajectory minimizing the traveling time.
