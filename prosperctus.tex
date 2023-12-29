@@ -96,7 +96,7 @@ Rewrite Eq.(\ref{2_wheel_model}) to
 \begin{equation}
 	\dot{x} = f(x,u)
 \end{equation}
-where $x \in \mathcal{X}$ is the state, belonging to a n-dimensional manifold $\mathcal{X}$(the state space), and $u=[\delta_{\tt dot},F_{f,x},F_{r,x}]^T \in \mathcal{U}$ is the control input. The preceding formulation can include both nonholonomic and dynamic constraints. 
+where $x \in \mathcal{X}$ is the state, belonging to a n-dimensional manifold $\mathcal{X}$(the state space), and $u=[\delta_{\tt dot},F_{fx},F_{rx}]^T$ is the control input. The preceding formulation can include both nonholonomic and dynamic constraints. 
 
 The vehicle uses rubber tires and the motion heavily depends on the tire-road interaction forces, the model of which are one of the most important part of the dynamics. The longitudinal friction forces are functions of the slip ratios, namely, $F_{ix} = \mu_x F_{i,z},i=f,r$ where $\mu_x$ is the longitudinal friction coefficient, which is a function of the longitude slip ratios $\lambda_i$. Similarly, The lateral friction forces are functions of the slip angle, namely, $F_{ix} = \mu_y F_{iz},i=f,r$ with lateral friction coefficient $\mu_y(\alpha_i)$, where $\alpha_i,i=f,r$ are the slip angles shown as in Fig.\ref{fig:2_wheel}.
 
@@ -107,21 +107,21 @@ friction forces is modeled as the friction circle. With $F_{ix}$ and $F_{iy}$, t
 \end{equation}
 where the variable is $\lambda_i$ or $\alpha_i$, and model parameters $B_t$, $C_t$, $D_t$, and $E_t$ are obtained through matching with experiments.
 
-For most regular ground surface, the value of parameter $E_t$ is between 0.97 and 1.0\cite{matlabvehicldocumentation}, to speed up the computation, the Eq.(\ref{magicformula}) then can be simplified as:  
+For most regular ground surface, the value of parameter $E_t$ is between 0.97 and 1.0\cite{matlabvehicldocumentation}, to speed up the computation, the Eq.(\ref{magicformula}) for lateral friction coefficient then can be simplified as:  
 \begin{equation}\label{simplemagicformula}	
 	\mu(x)=D_t\sin\left(C_t\tan^{-1}B_tx\right)
 \end{equation}
-
+Due to requirement of the computational speed, the longitudinal force of the wheel $F_{ix},i=f,r$ is modeled using a motor model for the DC electric motor as well as a friction model for the rolling resistance and the drag\cite{Liniger2014Optimization}. And to exploit the performance of the car, each wheel is installed with a brake than can be controlled independently. So the longitudinal force is:
+\begin{equation}\label{longitudinalforce}	
+	F_{ix}=(C_{m1}-C_{m2}v_x)d-C_r-C_dv_x^2-C_bb_i
+\end{equation}
+where $i=f,r$ denotes the front and rear wheel, $d$ is the throttle of the motor, $C_{m1},C_{m2},C_r,C_d,C_b$ are performance related parameters. $b$ is the brake torque applied on wheel. 
+According to Eq.(\ref{2_wheel_model}) and Eq.(\ref{longitudinalforce}), now the control input can be expressed as $u=[\delta_{\tt dot},d,b_f,b_r]^T \in \mathcal{U}$.
 \subsection{Motion Planning}
-The motion-planning problem can be stated as follows: given an initial state $x_0 \in \mathcal{X}$ , at time $t_0$, and a goal equilibrium configuration $x_f$, find a set of control inputs $ u:[t_0; t_f] \in \mathcal{U}$ that can drive the agent from $x_0$ to $x_f$. Although the usual formulation of the motion-planning problem is concerned only with finding a feasible trajectory, in this project we are also interested in finding a trajectory minimizing the traveling time.
+The motion-planning problem can be stated as follows: given an initial state $x_0 \in \mathcal{X}$ , at time $t_0$, and a goal equilibrium configuration $x_f$, find a set of control inputs $ u:[t_0; t_f] \in \mathcal{U}$ that can drive the agent from $x_0$ to $x_f$\cite{TSIANOS20072}. Although the usual formulation of the motion-planning problem is concerned only with finding a feasible trajectory, in this project we are also interested in finding a trajectory minimizing the traveling time.
 
-Sampling-based motion planners, such as the rapidly exploring random tree (RRT) and its variants, are widely
-applied for great efficiency at generating a trajectory.
-RRTs take sample points in the search space and add them
-to a tree that covers the whole space with probabilistic
-completeness. However, the RRT method is not optimal.
-Although the RRT* algorithm can be asymptotically
-optimal, its convergence is slow for large scale problems. 
+Sampling-based motion planners, such as the rapidly exploring random tree ($\tt RRT$)\cite{lavalle1998rapidly} and its variants, are widely applied for great efficiency at generating a trajectory. $\tt RRT$s take sample points in the search space and add them to a tree that covers the whole space with probabilistic completeness. However, the $\tt RRT$ method is not optimal. Although the $\tt RRT*$ algorithm can be asymptotically optimal\cite{Karaman2011Sampling}, its convergence is slow for large scale problems. 
+The $\tt RRT$ methods samples in state space, a process to connect current state and a new sampled state is required, which essentially is to solve a boundary value problem(BVP), leading to a huge computational consume. 
 
 \subsection{Motion Control}
 In order to execute the reference path or trajectory from the motion planning system a feedback controller is used to select appropriate actuator inputs to carry out the planned motion and correct tracking errors. The tracking errors generated during the execution of a planned motion are due in part to the inaccuracies of the vehicle model. Thus, a great deal of emphasis is placed on the robustness and stability of the closed

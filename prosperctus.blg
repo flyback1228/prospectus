@@ -15,51 +15,52 @@ I was expecting a `,' or a `}'---line 1273 of file bib/xilin_bib_modified.bib
  :   volume={2},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Liniger_2014"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Li2010OnTD
 
 Done.
-You've used 19 entries,
+You've used 21 entries,
             4087 wiz_defined-function locations,
-            1569 strings with 20871 characters,
-and the built_in function-call counts, 12597 in all, are:
-= -- 997
-> -- 294
-< -- 96
-+ -- 164
-- -- 52
-* -- 582
-:= -- 1924
-add.period$ -- 38
-call.type$ -- 19
-change.case$ -- 15
-chr.to.int$ -- 216
-cite$ -- 20
-duplicate$ -- 914
-empty$ -- 1044
-format.name$ -- 66
-if$ -- 2928
+            1585 strings with 21303 characters,
+and the built_in function-call counts, 14266 in all, are:
+= -- 1146
+> -- 327
+< -- 113
++ -- 183
+- -- 57
+* -- 668
+:= -- 2192
+add.period$ -- 42
+call.type$ -- 21
+change.case$ -- 17
+chr.to.int$ -- 249
+cite$ -- 22
+duplicate$ -- 1031
+empty$ -- 1160
+format.name$ -- 73
+if$ -- 3316
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 164
-newline$ -- 84
-num.names$ -- 19
-pop$ -- 396
+int.to.str$ -- 21
+missing$ -- 183
+newline$ -- 92
+num.names$ -- 21
+pop$ -- 428
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 985
+skip$ -- 1117
 stack$ -- 0
-substring$ -- 519
-swap$ -- 723
-text.length$ -- 24
+substring$ -- 597
+swap$ -- 828
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 19
+type$ -- 21
 warning$ -- 1
-while$ -- 49
-width$ -- 21
-write$ -- 197
+while$ -- 57
+width$ -- 23
+write$ -- 222
 (There was 1 error message)

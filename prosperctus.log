@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  28 DEC 2023 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  29 DEC 2023 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -843,6 +843,7 @@ File: figs/spline-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/spline-eps-converted-to.pdf  used on input line 4
 66.
 (pdftex.def)             Requested size: 252.94437pt x 180.67456pt.
+ [7 <./figs/spline-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/racetrack.eps>
 (epstopdf)                    date: 2023-12-25 14:08:29
 (epstopdf)                    size: 32258 bytes
@@ -853,13 +854,16 @@ Package epstopdf Info: Source file: <figs/racetrack.eps>
 onverted-to.pdf figs/racetrack.eps>
 (epstopdf)             \includegraphics on input line 495.
 Package epstopdf Info: Output file is already uptodate.
-<figs/racetrack-eps-converted-to.pdf, id=124, 463.7325pt x 347.2975pt>
+<figs/racetrack-eps-converted-to.pdf, id=167, 463.7325pt x 347.2975pt>
 File: figs/racetrack-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/racetrack-eps-converted-to.pdf>
 Package pdftex.def Info: figs/racetrack-eps-converted-to.pdf  used on input lin
 e 495.
 (pdftex.def)             Requested size: 231.86568pt x 173.64832pt.
- [7 <./figs/spline-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `Liniger_2014' on page 8 undefined on input line 503.
+
+
 
 pdfTeX warning: pdflatex.exe (file ./figs/sn.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
@@ -868,7 +872,10 @@ File: figs/sn.pdf Graphic file (type pdf)
 <use figs/sn.pdf>
 Package pdftex.def Info: figs/sn.pdf  used on input line 516.
 (pdftex.def)             Requested size: 191.7559pt x 149.59851pt.
-[8 <./figs/racetrack-eps-converted-to.pdf> <./figs/sn.pdf>] [9] [10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./figs/racetrack-eps-converted-to.pdf>] [9 <./figs/sn.pdf>]
 Package epstopdf Info: Source file: <figs/globalroute.eps>
 (epstopdf)                    date: 2023-12-20 12:30:36
 (epstopdf)                    size: 57916 bytes
@@ -879,13 +886,13 @@ Package epstopdf Info: Source file: <figs/globalroute.eps>
 -converted-to.pdf figs/globalroute.eps>
 (epstopdf)             \includegraphics on input line 639.
 Package epstopdf Info: Output file is already uptodate.
-<figs/globalroute-eps-converted-to.pdf, id=237, 421.575pt x 316.18124pt>
+<figs/globalroute-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
 File: figs/globalroute-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/globalroute-eps-converted-to.pdf>
 Package pdftex.def Info: figs/globalroute-eps-converted-to.pdf  used on input l
 ine 639.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
-
+ [10]
 
 LaTeX Warning: Reference `searchselection' on page 11 undefined on input line 6
 52.
@@ -926,10 +933,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10198 strings out of 475248
- 172921 string characters out of 5757812
- 1942785 words of memory out of 5000000
- 31509 multiletter control sequences out of 15000+600000
+ 10202 strings out of 475248
+ 173000 string characters out of 5757812
+ 1943785 words of memory out of 5000000
+ 31513 multiletter control sequences out of 15000+600000
  600511 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,21n,117p,1604b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -957,7 +964,7 @@ msbm10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on prosperctus.pdf (13 pages, 480311 bytes).
+Output written on prosperctus.pdf (13 pages, 482012 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

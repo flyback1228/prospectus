@@ -52,9 +52,26 @@ T.~M. Inc., ``Tire-road interaction,'' Natick, Massachusetts, United States,
   \url{https://https://www.mathworks.com/help/sdl/ref/tireroadinteractionmagicformula.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Liniger2014Optimization}
+A.~Liniger, A.~Domahidi, and M.~Morari, ``Optimization-based autonomous racing
+  of 1:43 scale {RC} cars,'' \emph{Optim. Control Appl. Methods}, vol.~36,
+  no.~5, pp. 628--647, jul 2014.
+
+\bibitem{TSIANOS20072}
+\BIBentryALTinterwordspacing
+K.~I. Tsianos, I.~A. Sucan, and L.~E. Kavraki, ``Sampling-based robot motion
+  planning: Towards realistic applications,'' \emph{Computer Science Review},
+  vol.~1, no.~1, pp. 2--11, 2007. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S1574013707000081}
+\BIBentrySTDinterwordspacing
+
 \bibitem{lavalle1998rapidly}
 S.~M. LaValle, ``Rapidly-exploring random trees: A new tool for path
   planning,'' \emph{Computer Science Dept. Oct.}, vol.~98, no.~11, 1998.
+
+\bibitem{Karaman2011Sampling}
+S.~Karaman and E.~Frazzoli, ``Sampling-based algorithms for optimal motion
+  planning,'' \emph{Int. J. Robot. Res.}, vol.~30, no.~7, pp. 846--894, 2011.
 
 \bibitem{sst}
 Y.~Li, Z.~Littlefield, and K.~E. Bekris, ``Asymptotically optimal
@@ -108,10 +125,5 @@ H.~Prautzsch, W.~Boehm, and M.~Paluszny, \emph{B{\'e}zier and B-spline
 R.~Lot and F.~Biral, ``A curvilinear abscissa approach for the lap time
   optimization of racing vehicles,'' \emph{IFAC Proceedings Volumes}, vol.~47,
   no.~3, pp. 7559--7565, 2014.
-
-\bibitem{Liniger_2014}
-A.~Liniger, A.~Domahidi, and M.~Morari, ``Optimization-based autonomous racing
-  of 1:43 scale {RC} cars,'' \emph{Optim. Control Appl. Methods}, vol.~36,
-  no.~5, pp. 628--647, jul 2014.
 
 \end{thebibliography}
