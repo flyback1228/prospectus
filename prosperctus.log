@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  28 DEC 2023 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  28 DEC 2023 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -747,11 +748,11 @@ ii
 * \textheight=686.565pt
 * \oddsidemargin=-18.06749pt
 * \evensidemargin=-18.06749pt
-* \topmargin=-53.5775pt
+* \topmargin=-50.80312pt
 * \headheight=12.0pt
-* \headsep=21.342pt
+* \headsep=18.56761pt
 * \topskip=12.0pt
-* \footskip=25.80774pt
+* \footskip=40.5821pt
 * \marginparwidth=20.0pt
 * \marginparsep=10.0pt
 * \columnsep=12.0pt
@@ -759,7 +760,7 @@ ii
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -794,6 +795,8 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/fig_4_wheel.PDF): PDF inclusion: foun
@@ -801,7 +804,7 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <figs/fig_4_wheel.PDF, id=1, 198.7425pt x 161.64389pt>
 File: figs/fig_4_wheel.PDF Graphic file (type pdf)
 <use figs/fig_4_wheel.PDF>
-Package pdftex.def Info: figs/fig_4_wheel.PDF  used on input line 61.
+Package pdftex.def Info: figs/fig_4_wheel.PDF  used on input line 77.
 (pdftex.def)             Requested size: 202.3529pt x 164.586pt.
 
 
@@ -810,42 +813,20 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <figs/fig_2_wheel.PDF, id=2, 176.5797pt x 151.5261pt>
 File: figs/fig_2_wheel.PDF Graphic file (type pdf)
 <use figs/fig_2_wheel.PDF>
-Package pdftex.def Info: figs/fig_2_wheel.PDF  used on input line 62.
+Package pdftex.def Info: figs/fig_2_wheel.PDF  used on input line 78.
 (pdftex.def)             Requested size: 202.3529pt x 173.64323pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
-[][]
- []
-
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 69.
-
-Underfull \vbox (badness 4913) has occurred while \output is active []
-
- [1{C:/Users/lixil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/l
-ixil/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
-
- <./figs/fig_4_wheel.PDF> <./figs/fig_2_wheel.PDF>]
+[1{C:/Users/lixil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/li
+xil/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2 <./figs/fig_
+4_wheel.PDF> <./figs/fig_2_wheel.PDF>]
 
 pdfTeX warning: pdflatex.exe (file ./figs/framework.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figs/framework.pdf, id=88, 204.765pt x 148.6353pt>
+<figs/framework.pdf, id=91, 204.765pt x 148.6353pt>
 File: figs/framework.pdf Graphic file (type pdf)
 <use figs/framework.pdf>
 Package pdftex.def Info: figs/framework.pdf  used on input line 133.
 (pdftex.def)             Requested size: 204.76448pt x 148.63493pt.
-[2 <./figs/framework.pdf>] [3]
-Underfull \hbox (badness 1400) in paragraph at lines 369--370
-\OT1/ptm/m/n/10 we may get the global mass ma-trix $\OT1/cmr/bx/n/10 M$ \OT1/pt
-m/m/n/10 and stiff-ness
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 369--370
-\OT1/ptm/m/n/10 in Eq.(12[]) to-gether us-ing the frame trans-form ma-trix
- []
-
-[4]
+[3 <./figs/framework.pdf>] [4] [5] [6]
 Package epstopdf Info: Source file: <figs/spline.eps>
 (epstopdf)                    date: 2023-12-25 14:08:30
 (epstopdf)                    size: 39181 bytes
@@ -856,17 +837,12 @@ Package epstopdf Info: Source file: <figs/spline.eps>
 erted-to.pdf figs/spline.eps>
 (epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
-<figs/spline-eps-converted-to.pdf, id=119, 505.89pt x 361.35pt>
+<figs/spline-eps-converted-to.pdf, id=124, 505.89pt x 361.35pt>
 File: figs/spline-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/spline-eps-converted-to.pdf>
 Package pdftex.def Info: figs/spline-eps-converted-to.pdf  used on input line 4
 54.
 (pdftex.def)             Requested size: 252.94437pt x 180.67456pt.
-
-Overfull \hbox (5.99937pt too wide) in paragraph at lines 454--455
- [][] 
- []
-
 Package epstopdf Info: Source file: <figs/racetrack.eps>
 (epstopdf)                    date: 2023-12-25 14:08:29
 (epstopdf)                    size: 32258 bytes
@@ -877,33 +853,26 @@ Package epstopdf Info: Source file: <figs/racetrack.eps>
 onverted-to.pdf figs/racetrack.eps>
 (epstopdf)             \includegraphics on input line 483.
 Package epstopdf Info: Output file is already uptodate.
-<figs/racetrack-eps-converted-to.pdf, id=120, 463.7325pt x 347.2975pt>
+<figs/racetrack-eps-converted-to.pdf, id=125, 463.7325pt x 347.2975pt>
 File: figs/racetrack-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/racetrack-eps-converted-to.pdf>
 Package pdftex.def Info: figs/racetrack-eps-converted-to.pdf  used on input lin
 e 483.
 (pdftex.def)             Requested size: 231.86568pt x 173.64832pt.
-[5 <./figs/spline-eps-converted-to.pdf>]
+
 
 pdfTeX warning: pdflatex.exe (file ./figs/sn.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<figs/sn.pdf, id=163, 191.7564pt x 149.59889pt>
+<figs/sn.pdf, id=126, 191.7564pt x 149.59889pt>
 File: figs/sn.pdf Graphic file (type pdf)
 <use figs/sn.pdf>
 Package pdftex.def Info: figs/sn.pdf  used on input line 504.
 (pdftex.def)             Requested size: 191.7559pt x 149.59851pt.
 
-Underfull \vbox (badness 1077) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (7.29909pt too wide) detected at line 556
-[][][]
- []
-
-
-Underfull \vbox (badness 1019) has occurred while \output is active []
-
- [6 <./figs/racetrack-eps-converted-to.pdf> <./figs/sn.pdf>] [7]
+[7 <./figs/spline-eps-converted-to.pdf>] [8 <./figs/racetrack-eps-converted-to.
+pdf> <./figs/sn.pdf>] [9]
 Package epstopdf Info: Source file: <figs/globalroute.eps>
 (epstopdf)                    date: 2023-12-20 12:30:36
 (epstopdf)                    size: 57916 bytes
@@ -914,29 +883,34 @@ Package epstopdf Info: Source file: <figs/globalroute.eps>
 -converted-to.pdf figs/globalroute.eps>
 (epstopdf)             \includegraphics on input line 627.
 Package epstopdf Info: Output file is already uptodate.
-<figs/globalroute-eps-converted-to.pdf, id=230, 421.575pt x 316.18124pt>
+<figs/globalroute-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
 File: figs/globalroute-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/globalroute-eps-converted-to.pdf>
 Package pdftex.def Info: figs/globalroute-eps-converted-to.pdf  used on input l
 ine 627.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
 
-Overfull \hbox (6.00195pt too wide) in paragraph at lines 627--628
- [][] 
- []
+
+LaTeX Warning: Reference `searchselection' on page 10 undefined on input line 6
+40.
 
 
-LaTeX Warning: Reference `searchselection' on page 8 undefined on input line 64
-0.
+LaTeX Warning: Reference `searchselection' on page 10 undefined on input line 6
+41.
 
+[10] [11 <./figs/globalroute-eps-converted-to.pdf>] (prosperctus.bbl)
 
-LaTeX Warning: Reference `searchselection' on page 8 undefined on input line 64
-1.
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
 
-[8 <./figs/globalroute-eps-converted-to.pdf>] (prosperctus.bbl) [9
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
 
-]
-(prosperctus.aux)
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[12] (prosperctus.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -950,13 +924,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10188 strings out of 475248
- 172715 string characters out of 5757812
- 1952785 words of memory out of 5000000
- 31498 multiletter control sequences out of 15000+600000
- 601607 words of font info for 137 fonts, out of 8000000 for 9000
+ 10194 strings out of 475248
+ 172843 string characters out of 5757812
+ 1943785 words of memory out of 5000000
+ 31505 multiletter control sequences out of 15000+600000
+ 600511 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,21n,117p,1576b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,21n,117p,1604b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx7.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/pu
@@ -972,20 +946,18 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C
 msfonts/cm/cmr7.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lixil/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/lixil/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lixil/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/lixil/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users
-/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
-.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/times/utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/times/utmbi8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/times/utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on prosperctus.pdf (9 pages, 496583 bytes).
+TeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lixil/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/lixil/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/lixil/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
+/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on prosperctus.pdf (12 pages, 478162 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
+ 336 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
