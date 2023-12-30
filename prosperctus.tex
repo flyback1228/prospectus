@@ -124,20 +124,16 @@ Sampling-based motion planners, such as the rapidly exploring random tree ($\tt 
 The $\tt RRT$ methods samples in state space, a process to connect current state and a new sampled state is required, which essentially is to solve a boundary value problem(BVP), leading to a huge computational consume. 
 
 \subsection{Motion Control}
-In order to execute the reference path or trajectory from the motion planning system a feedback controller is used to select appropriate actuator inputs to carry out the planned motion and correct tracking errors. The tracking errors generated during the execution of a planned motion are due in part to the inaccuracies of the vehicle model. Thus, a great deal of emphasis is placed on the robustness and stability of the closed
-loop system.
-Many effective feedback controllers have been proposed
-for executing the reference motions provided by the motion planning system to stabilize the reference path or trajectory in the presence of modeling error and other forms of uncertainty. Depending on the reference provided by the motion planner, the control objective may be path stabilization or trajectory stabilization.
+In order to execute the reference path or trajectory from the motion planning system, a feedback controller is used to select appropriate actuator inputs to carry out the planned motion and correct tracking errors. The tracking errors generated during the execution of a planned motion are due in part to the inaccuracies of the vehicle model. Thus, a great deal of emphasis is placed on the robustness and stability of the closed loop system.
+Many effective feedback controllers have been proposed for executing the reference motions to stabilize the reference path or trajectory in the presence of modeling error and other forms of uncertainty. Depending on the reference provided by the motion planner, the control objective may be path stabilization or trajectory stabilization.
 
-
-Model predictive control is a general control design
-methodology which can be very effective for autonomous driving. Conceptually, the approach is to solve the motion planning problem over a short time horizon, take a short interval of the resulting open loop control, and apply it to the system. While executing, the motion planning problem is re-solved to find an appropriate control for the next time interval. Advances in computing hardware as well as mathematical programming
-algorithms have made predictive control feasible for real-time use in driverless vehicles. 
+Model predictive control (MPC) is a general control design
+methodology which can be very effective for autonomous driving. Conceptually, the approach is to solve the motion planning problem over a short time horizon, take a short interval of the resulting open loop control, and apply it to the system. While executing, the motion planning problem is re-solved to find an appropriate control for the next time interval. Advances in computing hardware as well as mathematical programming algorithms have made predictive control feasible for real-time use in driverless vehicles. 
 
 
 \section{Completed Work}
 
-Fig.\ref{fig:framework} shows an overview of the motion planning and tracking scheme of the project. Different from other frameworks which use the path directly from sampling-based algorithm (and a smooth process) as the reference trajectory, in the framework of this project, the smoothed path is used as the centerline of a racetrack, and an optimization process called Minimum-Lap-Time is applied to get a time-stamped optimal trajectory on this road. It is a big challenge to get the optimal control input sequence for a racing car due to its high speed and nonlinear behavior of the high fidelity model. 
+Fig.\ref{fig:framework} shows an overview of the motion planning and tracking scheme of the project. Different from other frameworks which use the path directly from sampling-based algorithm (and a smooth process) as the reference trajectory, in this framework the smoothed path is used as the centerline of a racetrack, and an optimization process called Minimum-Lap-Time is applied to get a time-stamped optimal trajectory on this road. It is a big challenge to get the optimal control input sequence for a racing car due to its high speed and nonlinear behavior of the high fidelity model. 
 
 \begin{figure}[h]
 	\centering
@@ -147,11 +143,13 @@ Fig.\ref{fig:framework} shows an overview of the motion planning and tracking sc
 	\label{fig:framework}
 \end{figure}
 \subsection{Bi-Directional Sparse Stable Sampling-Based Algorithm}
-The rapidly exploring random tree algorithm ($\tt RRT$)\cite{lavalle1998rapidly} samples in state space, then tries to connect the sampled state to the nearest node on the tree by solving a boundary value problem (BVP). The Stable Sparse RRT($\tt SST$)\cite{sst} samples on input space to avoid such extra computational cost, especially for agents with high state space dimensions. However, sampling in input space breaks the uniform distribution in state space, leading to a lot of redundant samplings. To solve this problem, an additional set, $\mathbb{W}$, is employed in SST to monitor the sampling states, to make sure in a certain region only one node, which has least cost from the start state (in most cases it refers to the traveling time), is active at most. Any new state located in this region has to compare the cost with this active node. The states with higher cost will be ignored. 
+The $\tt RRT$ samples in state space, then tries to connect the sampled state to the nearest node on the tree by solving a boundary value problem. The Stable Sparse RRT($\tt SST$)\cite{sst} samples on input space to avoid such extra computational cost. However, sampling in input space breaks the uniform distribution in state space, leading to a lot of redundant samplings. To solve this problem, an additional set, $\mathbb{W}$, is employed in SST to monitor the sampling states, to guarantee in a certain region of the state space only one node, which has least cost from the start state (in most cases it refers to the traveling time), is active at most. Any new state located into this region has to compare the cost with this active node. The states with higher cost will be ignored. 
 
-The bidirectional informed $\tt SST$, ${{\tt Bi}}$-${{\tt iSST}}$, is developed for this project. Algorithm~\ref{biisst} shows the structure of the ${{\tt Bi}}$-${{\tt iSST}}$ algorithm. Compared with the ${{\tt SST}}$ algorithm, the ${{\tt Bi}}$-${{\tt iSST}}$ algorithm maintains two trees, $\mathcal{G}_{\tt a} $ and $ \mathcal{G}_{\tt b} $, as well as their witness sets, $\mathbb{W}_{\tt a} $ and $ \mathbb{W}_{\tt b} $. The roots of the two trees are on the start state and the target state of all the agents, respectively (Line 1). A tree is randomly selected to propagate by following the $\tt iSST$ propagation as described in Algorithm~\ref{isst_step}, which generates a set of new vertices $\mathbb{X}$.
+The bidirectional informed $\tt SST$, ${{\tt Bi}}$-${{\tt iSST}}$, is developed for this project. Algorithm~\ref{biisst} shows the structure of the ${{\tt Bi}}$-${{\tt iSST}}$ algorithm. Compared with the ${{\tt SST}}$ algorithm, the ${{\tt Bi}}$-${{\tt iSST}}$ algorithm maintains two trees, $\mathcal{G}_{\tt a} $ and $ \mathcal{G}_{\tt b} $, as well as their witness sets, $\mathbb{W}_{\tt a} $ and $ \mathbb{W}_{\tt b} $. The roots of the two trees are on the start state and the target state of all the agents, respectively. A tree is randomly selected to propagate by following the $\tt iSST$ propagation as described in Algorithm~\ref{isst_step}, which generates a set of new vertices $\mathbb{X}$.
 
-A set $\mathbb{P}$ is maintained to collect the vertices that are near to any vertex whose distance to the other tree is below $\delta_{\tt watch}$. A process is employed to connect the vertices in $\mathbb{P}$ to the other tree, to accelerate the path finding speed. 
+The '$\tt i$' in '$\tt iSST$' means informative. By using the information of the target, we can control the tree propagation direction, to speed up the path finding process.
+
+A set $\mathbb{P}$ is maintained to collect the vertices that are near to any vertex whose distance to the other tree is below $\delta_{\tt watch}$. A process of solving BVP is employed to connect the vertices in $\mathbb{P}$ to the other tree, to accelerate the path finding speed. 
 
 \begin{algorithm}[ht!]
 	\caption {${{\tt Bi}}$-${{\tt iSST}}$}
@@ -227,21 +225,19 @@ A set $\mathbb{P}$ is maintained to collect the vertices that are near to any ve
 % 	\end{eqnarray}
 
 \subsection{Trajectory Smoothing}
-Several sampling-based motion planners are able to output an optimal trajectory\cite{sst}\cite{anytimemotion}. However, massive computation time is required to achieve such optimal trajectory. For real applications, the time for planners is limited, causing jerky output paths which are less human-friendly. Typically, the output of the sampling-based planner should be smoothed, in most case of which the dynamics feasibility will not be maintained. So to accelerate the computation, the simple kinematic model is adopted in the sampling-base stage, and the more complex dynamics model is considered in the late procedures to exploit the maximum performance of the vehicle.
-
-Most of the existing path smoothing methods are not applicable for car-like robot since the initial orientation is not considered, causing the smoothed path unreachable. The proposed approach here aims at solving such phenomenon and to generate a more natural path. For example the Convex Elastic Smoothing (CES)\cite{zhu2015convex} algorithm (CES) algorithm uses the following strategy:
+Several sampling-based motion planners are able to output an optimal trajectory\cite{sst}\cite{anytimemotion}. However, massive computation time is required to achieve such optimal trajectory. For real applications, the time for planners is limited, causing jerky output paths which are less human-friendly. Typically, the output of the sampling-based planner should be smoothed. However, in most smooth methods the dynamics feasibility will not be maintained and are not applicable for car-like robot since the initial orientation is not considered. For example the Convex Elastic Smoothing (CES)\cite{zhu2015convex} algorithm (CES) algorithm uses the following strategy:
 \begin{subequations}\label{ces}
 	\begin{align}
 		\min \quad & \sum \|D_{i+1}-D_{i}\|_2^2\\
 		\textrm{s.t.} \quad & D_{k}=\pi_{i}-\pi_{i-1},\pi_1 = Q_1,\pi_n = Q_n\\
-		\quad &  \pi_i \in \mathcal{B}_i ,\|D_{i+1}-D_{i}\| \leqslant \frac{d^2}{R_{\tt min}} \\
+		\quad &  \pi_i \in \mathcal{P}_i ,\|D_{i+1}-D_{i}\| \leqslant \frac{d^2}{R_{\tt min}} \\
 		\quad & \pi_2 = P_1 + k\frac{Q_2-Q_1}{\|Q_2-Q_1\|} \label{ces_direction}
 	\end{align}
 \end{subequations}
-Where $\mathcal{B}$ is a collision-free tube along the original trajectory $Q$, and $\pi$ is the smoothed path.
+Where $\mathcal{P}$ is a collision-free tube along the original trajectory $Q$, and $\pi$ is the smoothed path.
 Eq.(\ref{ces_direction}) is used to control the initial orientation of the smoothed path. However, in this case, the sharp turn may appear at the second segment $D_2$ sometimes. 
 
-Consider the trajectory from sampling-based method as a Bernoulli-Euler~\cite{Truesdell1984} beam with some external forces and pre-defined deformations, as well as constraints on the two ends. The dynamics deforming process due to such forces and deformations is equivalently treated as the path smoothing process. Now take the dynamic analysis of the beam by deriving its equations of motion(EOMs) to get the variation of displacements with time, by taking into account of the effects of inertia and viscous damping.
+The proposed approach here aims at solving such phenomenon and to generate a more natural path. Take the trajectory from sampling-based method as a Bernoulli-Euler~\cite{Truesdell1984} beam with some external forces and pre-defined deformations, as well as constraints on the two ends. The dynamics deforming process due to such forces and deformations is equivalently treated as the path smoothing process. Now take the dynamic analysis of the beam by deriving its equations of motion(EOMs) to get the variation of displacements with time, by taking into account of the effects of inertia and viscous damping.
 
 The internal potential energy of the beam can be described as:
 \begin{equation}
@@ -256,20 +252,20 @@ and the total kinetic energy is:
 
  The finite element method by dividing the beam to $N$ elements and decoupling the stretching and bending process is adopted to solve the problem. The total internal potential energy for each element can be written as:
 \begin{equation}
-    {U^e} = \frac{1}{2}EA\int_{0}^{L}  \,\left(\frac{du}{dx}\right)^2dx + \frac{1}{2}EI\int_{0}^{L}  \,\left(\frac{d^2v}{dx^2}\right)^2dx
+    {U^e} = \frac{1}{2}EA\int_{0}^{L^e}  \,\left(\frac{du}{dx}\right)^2dx + \frac{1}{2}EI\int_{0}^{L^e}  \,\left(\frac{d^2v}{dx^2}\right)^2dx
 	\label{elementpotentialenergy}
 \end{equation}
 
-where $u$ and $v$ are axial and transverse displacement of the beam.
-The kinetic energy can be expressed as:
+where $u$ and $v$ are axial and transverse displacement of the beam. $E$,$A$ and $I$ are young's modulus, section area and moment of inertia, respectively.
+By denoting $\rho$ as the density, the kinetic energy can be expressed as:
 \begin{equation}
 	\begin{split}
-    {T^e} & = {T_s} + {T_b} \\%\frac{1}{2}\int_V {\rho}\textbf{u}^T\textbf{u} dV^e \\
-	& = \frac{1}{2}\int_{0}^{L}  \,\rho A\left(\frac{du}{dt}\right)^2dx + \frac{1}{2}\int_{0}^{L}  \,\rho A\left(\frac{dv}{dt}\right)^2dx
+    {T^e} & = {T_s}^e + {T_b}^e \\%\frac{1}{2}\int_V {\rho}\textbf{u}^T\textbf{u} dV^e \\
+	& = \frac{1}{2}\int_{0}^{L^e}  \,\rho A\left(\frac{du}{dt}\right)^2dx + \frac{1}{2}\int_{0}^{L^e}  \,\rho A\left(\frac{dv}{dt}\right)^2dx
 	\end{split}
 	\label{elementkineticenergy}
 \end{equation}
-by ignoring the rotation energy. The first items of $U^e$ and $T^e$ are the energy due to stretching while the second items are for bending.
+by ignoring the rotation energy. The first items of $U^e$ and $T^e$ are the energies due to stretching while the second items are due to bending.
 
 
 
@@ -299,7 +295,7 @@ for stretching, and Hermite polynomials shape functions
 	\end{array}
 	\label{shapefunctionv}
 \end{equation}
-for bending where $\zeta_s = (x-u_1)/L$ and ${\zeta_b}=(2x-{L})/L $, the symmetric stiffness matrix and mass matrix can be derived by putting the functions $\chi =\sum_{i = 1}^{2}{Z_{\chi i}} $,($\chi=u,v,\theta$) to potential energy expression Eq.(\ref{elementpotentialenergy}) and Eq.(\ref{elementkineticenergy}) respectively:
+for bending where $\zeta_s = (x-u_1)/L$ and ${\zeta_b}=(2x-{L})/L $, the symmetric stiffness matrix $\mathbf{K_e}$ and mass matrix $\mathbf{M_e}$ can be derived by putting the functions $\chi =\sum_{i = 1}^{2}{Z_{\chi i}} $,($\chi=u,v,\theta$) to potential energy expression Eq.(\ref{elementpotentialenergy}) and Eq.(\ref{elementkineticenergy}) respectively:
 
 
 \begin{subequations}
@@ -333,7 +329,7 @@ The vehicle is a non-holonomic system and the initial orientation $\bar{\theta}_
 % Without external force the final shape of beam tends to be a quadratic curve if a fixed support and a pinned support are applied on the two ends respectively. 
 The deformation of the beam is restricted by the environment obstacles. Assume there are virtual potential fields emitted by obstacles and the force applied on the beam due to such fields is expressed as:
 \begin{equation}	
-    \boldsymbol{F_o}  = \sum_{i = 1}^{N^{obs}} \left( \frac{k_{b}}{\Vert  \boldsymbol{l_i}\Vert ^2 } \cdot\frac{\boldsymbol{l_i}}{ \Vert \boldsymbol{l_i} \Vert  }\right)
+    \boldsymbol{F_o}  = \sum_{i = 1}^{N_{o}} \left( \frac{k_{b}}{\Vert  \boldsymbol{l_i}\Vert ^2 } \cdot\frac{\boldsymbol{l_i}}{ \Vert \boldsymbol{l_i} \Vert  }\right)
 	\label{obstaclesforce}
 \end{equation}
 Where $k_{b}$ is the intensity of the potential field and $\boldsymbol{l_i}$ is the displacement vector from obstacle to beam node.
@@ -380,11 +376,11 @@ $k_m$ is a constant coefficient, and the negative sign implies the torque is opp
 
 After modeling and meshing the beam, we may get the global mass matrix $\mathbf{M}$ and stiffness matrix $\mathbf{K}$ by assembling the matrices of the elements in Eq.(\ref{matrixofelement}) together using the frame transform matrix as described in \cite{Reddy2019}, and the assembled DOF is $\boldsymbol{d}=[d^x_0,d^y_0,d^\theta_0,d^x_1,d^y_1,d^\theta_1,...,d^x_N,d^y_N,d^\theta_N]^T$.
 
-Among the five constraint DOFs($d^x_0,d^y_0,d^\theta_0,d^x_N$ and $d^y_N$), the translation displacements of the first node are zeros while the others are not. The force due to pre-defined deformation on those nodes should be considered. Denote $\{\bar{x}_i,\bar{y}_i\}=\pi_i-n_i$, such force can be calculated by:
+Among the five constraint DOFs $d^x_0,d^y_0,d^\theta_0,d^x_N$ and $d^y_N$, the translation displacements of the first node are zeros while the others are not. The force due to pre-defined deformation on those nodes should be considered:
 \begin{equation}
 	\boldsymbol{F}_d = \mathbf{K}\boldsymbol{d}_p
 \end{equation}
-where $\boldsymbol{d}_p = [0,0,\bar{\theta}_0,0,0,0,...,\bar{x}_N,\bar{y}_N,0]$. 
+where $\boldsymbol{d}_p = [0,0,\bar{\theta}_0,0,0,0,...,\bar{x}_N,\bar{y}_N,0]$ is the constrained displacement. 
 
 Without damping, the system tends to oscillate. A proper viscous damping can avoid the oscillation and decrease the settling time.
 Since mass matrix $\mathbf{M}$ and stiffness matrix $\mathbf{K}$ are positive definite, the critical damping matrix $\mathbf{C}$ can be calculated by the Inman and Andry method \cite{Inman1980SomeRO}:
@@ -398,7 +394,7 @@ The final EOM can be expressed as:
 \end{equation}
 
 \subsubsection{simulation}
-An integrator is used to simulate the stress release process by integrating on Eq.(\ref{eom}), with initial state $\boldsymbol{d}_0 = [0,0,\bar{\theta}_0,\bar{x}_1,\bar{y}_1,0,...,\bar{x}_N,\bar{y}_N,0]^T$ and constraints $d^x_0=0$, $d^y_0=0$, $d^\theta_0=\bar{\theta}_0$, as well as $d^x_N=\bar{x}_N$, and $d^y_N=\bar{y}_N$
+An integrator is used to simulate the stress release process by integrating on Eq.(\ref{eom}), with initial state $\boldsymbol{d}_0 = [0,0,\bar{\theta}_0,\bar{x}_1,\bar{y}_1,\bar{\theta}_1,...,\bar{x}_N,\bar{y}_N,\bar{\theta}_N]^T$ and constraints $d^x_0=0$, $d^y_0=0$, $d^\theta_0=\bar{\theta}_0$, as well as $d^x_N=\bar{x}_N$, and $d^y_N=\bar{y}_N$.
 
 Note the proposed FEM method can't be applied to a real beam since deformation of the virtual beam is large, and Eq.(\ref{elementpotentialenergy}),(\ref{elementkineticenergy}),(\ref{shapefunctionu}) and (\ref{shapefunctionv}) are all based on the assumption of small deformation. Readers can refer \cite{largedeformationbeam} for theories of large deformation beam, or \cite{kim2021physicsinformed}\cite{Levien:EECS-2008-103} for elastica theory.
 
@@ -421,7 +417,7 @@ The curve of the refined beam from the previous section can be used as a smoothe
 	% \mathbf{\Gamma}_i(t)=(1-t)^3P_i+3t(1-t)^2Q_i+3t^2(1-t)M_i+t^3P_{i+1},t\in[0,1]
 	\mathbf{\Gamma}_i(\tau)=\sum_{j = 0}^{3}\binom{j}{3}  \tau^j(1-\tau)^{3-j}\cdot P_{ij}
 \end{equation}
-for $i=0,...N-1$, where $P_{i0}=e^1_{i}$ and $P_{i3}=e^2_i$ are the coordinates of the two nodes of the element $e_i$. Note  $\mathbf{\Gamma}_{i}(1) =\mathbf{\Gamma}_{i+1}(0) = P_{(i+1)0}=P_{i3} $. $P_{i1}$ and $P_{i2}$ are two control points we are going to find according to the following conditions for $\mathcal{C} ^2$ smooth:
+for $i=0,...N-1$, where $P_{i0}=e^1_{i}$ and $P_{i3}=e^2_i$ are the coordinates of the two nodes of the element $e_i$. Note  $\mathbf{\Gamma}_{i}(1) =\mathbf{\Gamma}_{i+1}(0) = P_{(i+1)0}=P_{i3} $. $P_{i1}$ and $P_{i2}$ are two control points we are going to find according to the following $\mathcal{C} ^2$ smooth conditions:
 \begin{equation}\label{beziersmooth}
 	\begin{array}{l}
 		\mathbf{\Gamma}_{i-1}'(1)=\mathbf{\Gamma}_{i}'(0), \\
@@ -439,17 +435,17 @@ If we also apply natural boundary condition on the initial point:
 \begin{equation}\label{naturalboundary}
 	\mathbf{\Gamma}_{0}''(0)=0
 \end{equation}
-then a typical natural cubic spline can be fit by solving those $4n$ linear equations. However, we'd prefer the the track to align with the orientation of the car at initial state, to tap the accelerating potential, which means the direction of the curve at $\mathbf{\Gamma}_{0}(0)$ should be the same as the initial orientation, so we can use the following boundary condition to replace Eq.\ref{naturalboundary}:
+then a typical natural cubic spline can be fit by solving those $4n$ linear equations. However, we'd prefer the the track to align with the orientation of the car at initial state, to tap the accelerating potential, which means the direction of the curve at $\mathbf{\Gamma}_{0}(0)$ should be the same as the initial orientation, so we can use the following boundary condition to replace Eq.(\ref{naturalboundary}):
 \begin{equation}\label{orientationcondition}
 	\frac{dy}{dx} | _{\mathbf{\Gamma}_{0}(0)}=\tan(\psi_0)\\
 \end{equation}
-where $\phi_0$ is the initial orientation of the car.
-However, Eq.\ref{orientationcondition} only provides one equation, we still need to seek another equation to get all $P_{i1}$ and $P_{i2}$. Or we may optimize a curve similar to natural cubic spline, but the constraint is released from Eq.\ref{naturalboundary} to Eq.\ref{orientationcondition}, which can be summarized as a QCQP problem:
+where $\psi_0$ is the initial orientation of the car.
+However, Eq.(\ref{orientationcondition}) only provides one equation, we still need to seek another equation to get all $P_{i1}$ and $P_{i2}$. Or we may optimize a curve similar to natural cubic spline, but the constraint is released from Eq.(\ref{naturalboundary}) to Eq.(\ref{orientationcondition}), which can be summarized as a QCQP problem:
 
 \begin{equation}
 	\begin{aligned}
 		\min \quad & \| \mathbf{\Gamma}_{0}''(0)\| _2^2+\beta \sum_{i = 0}^{n-1}(\| P_{i1}-\bar{P}_{i1}\| _2^2+ \| P_{i2}-\bar{P}_{i2}\| _2^2)\\
-		\textrm{s.t.} \quad & \textrm{Eq.\ref{beziersmooth}},\textrm{Eq.\ref{naturalboundaryend}},\textrm{Eq.\ref{orientationcondition}}
+		\textrm{s.t.} \quad & \textrm{Eq.(\ref{beziersmooth})},\textrm{Eq.(\ref{naturalboundaryend})},\textrm{Eq.(\ref{orientationcondition})}
 	\end{aligned}
 \end{equation}
 where $\beta$ is the weight, $\bar{P}_{i1}$ and $\bar{P}_{i2}$ are coefficients for natural cubic spline curve with same waypoints. The first term of the objective function can be considered as the moment due to the fixed support. And the second term represents the similarity to a natural cubic spline.
@@ -476,19 +472,19 @@ Now we may use to the following parametric curve equation to represent the cente
 \end{equation} 
 where $\tau \in [0,N]$ is the parameter of the curve. 
 
-Same approach can be applied to generate the left boundary parametric curve $\mathbf{\Upsilon}(\tau)$ and right boundary $\mathbf{\Psi}(\tau)$ for the racetrack. The waypoints of the left boundary can be derived from the center-line $\mathbf{\Gamma}(\tau)$:
+The same approach can be applied to generate the left boundary parametric curve $\mathbf{\Upsilon}(\tau)$ and right boundary $\mathbf{\Psi}(\tau)$ for the racetrack. The waypoints of the left boundary can be derived from the center-line $\mathbf{\Gamma}(\tau)$:
 \begin{equation}\label{innerwaypoint}
-	W_i^{left} = \min{(n_{\tt max},n_i^{obs})}\cdot  	\mathbf{T}_{l} \frac{\mathbf{\Gamma}'(i)}{\| \mathbf{\Gamma}'(i)\|_2 }
+	W_{li} = \min{(n_{\tt max},n_i)}\cdot  	\mathbf{T}_{l} \frac{\mathbf{\Gamma}'(i)}{\| \mathbf{\Gamma}'(i)\|_2 }
 \end{equation} 
-where $n_{\tt max}$ is the maximum allowed track offset while $n_i^{obs}$ is the minimum distance from $\mathbf{\Gamma}(i)$ to obstacles along the normal direction, and $\mathbf{T}_{l}=\begin{bmatrix}
+where $n_{\tt max}$ is the maximum allowed track offset while $n_i$ is the minimum distance from $\mathbf{\Gamma}(i)$ to obstacles along the normal direction, and $\mathbf{T}_{l}=\begin{bmatrix}
 	0 & 1 \\
 	-1 & 0
 \end{bmatrix}$ is the rotation transform matrix.
-Same treatment can be applied to get the right boundary $W_i^{right}$ by replacing $\mathbf{T}_l$ with $\mathbf{T}_{r}=\begin{bmatrix}
+Same treatment can be applied to get the right boundary $W_{ri}$ by replacing $\mathbf{T}_l$ with $\mathbf{T}_{r}=\begin{bmatrix}
 	0 & -1 \\
 	1 & 0
 \end{bmatrix}$.
-Such treatment approximately makes the vector $\overrightarrow{\mathbf{\Gamma}(\tau)\mathbf{\Psi}(\tau)}$ and $\overrightarrow{\mathbf{\Gamma}(\tau)\mathbf{\Upsilon}(\tau)}$ perpendicular to $\mathbf{\Gamma}'(\tau)$ for any $\tau$.
+Such treatment approximately makes the vectors $\overrightarrow{\mathbf{\Gamma}(\tau)\mathbf{\Psi}(\tau)}$ and $\overrightarrow{\mathbf{\Gamma}(\tau)\mathbf{\Upsilon}(\tau)}$ perpendicular to $\mathbf{\Gamma}'(\tau)$ for any $\tau \in [0,\tau_{\tt max}]$.
 
 \begin{figure}
 	\centering
@@ -500,7 +496,7 @@ Such treatment approximately makes the vector $\overrightarrow{\mathbf{\Gamma}(\
 Fig.\ref{fig_racetrack} show an example of a racetrack.
 
 \subsubsection[optimization]{Trajectory Optimization}\label{trajectoryoptimization}
-The purpose of the trajectory optimization is to find the vehicle control input and a feasible path that minimize the total traveling time $T$ of moving the vehicle along the track from start state to the target. As explained in \cite{LOT20147559},\cite{Liniger_2014}, the most effective way to describe the optimization strategy is in the Frenet-Serret(F-S) planar frame, which is shown in Fig.\ref{fig_sn}, where $s$ is the longitudinal displacement along the racetrack, e.g. the traveled length of the racetrack, $n$ is the deviation from the center-line, and $\psi_c$ is the tangent angle of the curve of the center-line. The calculus of the vehicle speed in the dynamics model of Eq.(\ref{2_wheel_model}) in F-S planar frame now is:
+The purpose of the trajectory optimization is to find the vehicle control input and a feasible path that minimize the total traveling time $T$ of moving the vehicle along the track from start state to the target. As explained in \cite{LOT20147559}, the most effective way to describe the optimization strategy is in the Frenet-Serret(F-S) planar frame, which is shown in Fig.\ref{fig_sn}, where $s$ is the longitudinal displacement along the racetrack, e.g. the traveled length of the racetrack, $n$ is the deviation from the center-line, and $\psi_c$ is the tangent angle of the curve of the center-line. The calculus of the vehicle speed in the dynamics model of Eq.(\ref{2_wheel_model}) in F-S planar frame now is:
 
 \begin{subequations}\label{dynamics_fs}
 	\begin{align}
@@ -522,23 +518,23 @@ Since the analytical expression of the center-line $\mathbf{\Gamma}$ with respec
 \begin{equation}\label{tau_dot}
 	\dot{\tau}  = \frac{1}{|\mathbf{\Gamma}'|}\frac{v_x \cos(\psi-\psi_c)-v_y \sin(\psi-\psi_c)}{1-n\kappa}
 \end{equation}
-Now the state vector is $\boldsymbol{x}=[\tau,n,\psi,v_x,v_y,\omega,\delta]^T$. Let $f(\boldsymbol{x},\boldsymbol{u})$ be the dynamics of the vehicle, the optimal trajectory can be obtained by solving the following OCP:
+Now the state vector is $\boldsymbol{x}=[\tau,n,\psi,v_x,v_y,\omega,\delta]^T$. Let $f(\boldsymbol{x},\boldsymbol{u})$ be the dynamics of the vehicle, the optimal trajectory can be obtained by solving the following optimal control problem (OCP):
 
 \begin{subequations}
 	\begin{align}
 		\min \quad & T\\
 		\textrm{s.t.} \quad & \boldsymbol{\dot{x}}=f(\boldsymbol{x},\boldsymbol{u})\\
-		\quad &  \boldsymbol{\psi}(\delta,\delta_{dot},d,b)\leqslant 0  \label{ocp_constraints}\\
+		\quad &  \boldsymbol{\psi}(\delta,\delta_{dot},d,b_f,b_r)\leqslant 0  \label{ocp_constraints}\\
 		\quad &  n^{\tt min}(\tau(t))\leqslant  n\leqslant  n^{\tt max}(\tau(t)) \label{ocp_n_bound}\\
 		\quad & \boldsymbol{x}(0)=\bar{\boldsymbol{x}}_0,{\tau(T)}=N,{v_x(T)}=0
 		\label{ocp}
 	\end{align}
 \end{subequations}
-where Eq.(\ref{ocp_constraints}) are algebraic inequalities that bound state variable $\delta$ and control variables $\delta_{dot}$, $d$ and $b$. Inequality (\ref{ocp_n_bound}) is used to keep the vehicle traveling in the range of the racetrack, where $n^{\tt min}(\tau(t)) = -\|\mathbf{\Gamma}(\tau(t))-\mathbf{\Psi}(\tau(t))\|$ and $n^{\tt max}(\tau(t)) = \|\mathbf{\Gamma}(\tau(t))-\mathbf{\Upsilon}(\tau(t))\|$. 
+where Eq.(\ref{ocp_constraints}) are algebraic inequalities that bound state variable $\delta$ and control variables $\delta_{dot}$, $d$, $b_f$ and $b_r$. Inequality (\ref{ocp_n_bound}) is used to keep the vehicle traveling in the range of the racetrack, where $n^{\tt min}(\tau(t)) = -\|\mathbf{\Gamma}(\tau(t))-\mathbf{\Psi}(\tau(t))\|$ and $n^{\tt max}(\tau(t)) = \|\mathbf{\Gamma}(\tau(t))-\mathbf{\Upsilon}(\tau(t))\|$. 
 The OCP (\ref{ocp}) is hard to solve due to the high non-linearity of $\mathbf{\Gamma}$ and the presence of inequality constraint(\ref{ocp_constraints}). The following two treatments are applied to increase the chance of getting an optimal solution.
 \begin{enumerate}
 	\item Discrete the whole racetrack to $N^c$ segments with equivalent length.
-	\item Convert the inequality constraint (\ref{ocp_n_bound}) to soft constraints used as a penalty term in objective function, the value of which is small when $n^{\tt min}\leqslant  n\leqslant  n^{\tt max} $ but increases rapidly if $n$ exceeds the boundaries. 	 
+	\item Convert the inequality constraint (\ref{ocp_n_bound}) to soft constraints and take them as a penalty term in objective function, the value of which is small when $n^{\tt min}\leqslant  n\leqslant  n^{\tt max} $ but increases rapidly if $n$ exceeds the boundaries. 	 
 \end{enumerate}
 
 We use the exponential as the penalty term and let $s(\overline{\tau}_{i+1})-s(\overline{\tau}_{i})=s(\overline{\tau}_{i})-s(\overline{\tau}_{i-1})$ for $i \in [1,N^c]$, the OCP(\ref{ocp}) can be rewritten as:
@@ -546,7 +542,7 @@ We use the exponential as the penalty term and let $s(\overline{\tau}_{i+1})-s(\
 	\begin{align}
 		\min \quad & \sum_{i = 1}^{N^{c}}\left(\varDelta t_i + \gamma\left(e^{\lambda(n^{\tt min}_i-n_i) }+e^{\lambda(n_i-n^{\tt max}_i) }\right)\right)\\
 		\textrm{s.t.} \quad & \boldsymbol{x}_{i+1}=\varDelta t_i f(\boldsymbol{x}_i,\boldsymbol{u}_i)\\
-		\quad &  \boldsymbol{\psi}(\delta_i,\delta^{dot}_i,d_i,b_i)\leqslant 0 \\
+		\quad &  \boldsymbol{\psi}(\delta_i,\delta^{dot}_i,d_i,b_{fi},b_{ri})\leqslant 0 \\
 		\quad & \tau_i=\bar{\tau}_i \\
 		\quad & \boldsymbol{x}_0=\bar{\boldsymbol{x}}_0,v^x_{N^c+1}=0
 		\label{ocp_refine}
@@ -568,8 +564,8 @@ An NMPC shown in Eq.(\ref{trajectorytrack}) is applied for trajectory tracking. 
 \end{equation}
 where $Q$ and $R$ are weight matrices for state and control input, respectively.
 
-\subsection{The Ref-iSST algorithm and Global Route}
-The $\tt Ref-iSST$ path planning algorithm is developed for another project - the microfluidic system that consists of $N \times N$ electrode arrays. The electrodes are independently and intermittently powered with a DC voltage. The electrode arrays are on the substrate and covered by a fluid that contains a dilute concentration of micro- or nanowires. The motion of the wires is guided by the electrical field wirelessly. One of the biggest limitations of wireless external actuation is its global and coupled influence in the workspace, which limits the capability to robustly manipulate multiple agents independently and simultaneously.
+\subsection{The $\tt Ref$-$\tt iSST$ algorithm and Global Route}
+The $\tt Ref$-$\tt iSST$ path planning algorithm is developed for another project - the microfluidic system that consists of $N \times N$ electrode arrays. The electrodes are independently and intermittently powered with a DC voltage. The electrode arrays are on the substrate and covered by a fluid that contains a dilute concentration of micro- or nanowires. The motion of the wires is guided by the electrical field wirelessly. One of the biggest limitations of wireless external actuation is its global and coupled influence in the workspace, which limits the capability to robustly manipulate multiple agents independently and simultaneously.
 
 A reference trajectory is required to control the wires from their random positions to the destinations. By applying the Bi-iSST algorithm, we find the wires are prone to travel along the edge of the cell formed by the nearest $2 \times 2$ electrodes. The Ref-iSST algorithm is developed based on this phenomenon. First an optimal global reference trajectory is generated by scheduling the electrode array states. Then an algorithm is applied to force the wires following the global reference trajectory. 
 
@@ -701,9 +697,9 @@ The $l$ temporary nodes are prioritized according to the quality function shown 
 		\frac{\exp(-k\cdot{a}\cdot{\frac{|c-c_{\tt max}|}{\max(c,c_{\tt max})})}}{{\tt distance}(x,x_{\tt ref})},
 	\label{quality}
 \end{equation}
-Where $c$ is the cost of the vertex $x$ and $c_{\tt max}$ is the total cost of the reference trajectory. $x_{\tt ref}$ is the estimated state in the reference trajectory corresponding to $c$ and the target state is selected as the reference state if the vertex's cost exceeds the total cost of the reference trajectory. Parameter $a$ represents the weight of cost in the quality measure and $k$ is a degrading factor with respect to $c$, where $k=1$ for $c<c_{\tt max}$ and $k>1$ for $c>c_{\tt max}$. The quality function aims to prioritize the vertex whose state is closer to the estimated state with the same cost in the reference trajectory. By setting $k>1$ for $c>c_{\tt max}$, the temporary state around the target state with less cost is prioritized.
+where $c$ is the cost of the vertex $x$ and $c_{\tt max}$ is the total cost of the reference trajectory. $x_{\tt ref}$ is the estimated state in the reference trajectory corresponding to $c$ and the target state is selected as the reference state if the vertex's cost exceeds the total cost of the reference trajectory. Parameter $a$ represents the weight of cost in the quality measure and $k$ is a degrading factor with respect to $c$, where $k=1$ for $c<c_{\tt max}$ and $k>1$ for $c>c_{\tt max}$. The quality function aims to prioritize the vertex whose state is closer to the estimated state with the same cost in the reference trajectory. By setting $k>1$ for $c>c_{\tt max}$, the temporary state around the target state with less cost is prioritized.
 
-\section{Research Plan}
+\section{Future Work}
 The motion controller works well for low speed scenario. However, when the speed reaches around 25 m/s in the simulation environment, the vehicle can't follow the reference trajectory, especially for the region with sharp turns. The reasons causing such failure may be:
 \begin{enumerate}
 	\item the description of the dynamics model is not precise. Some degrees of freedom, like pitch and roll, are ignored. 

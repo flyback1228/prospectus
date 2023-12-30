@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  29 DEC 2023 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  29 DEC 2023 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,7 +824,7 @@ PDF version <1.7>, but at most version <1.5> allowed
 <figs/framework.pdf, id=93, 204.765pt x 148.6353pt>
 File: figs/framework.pdf Graphic file (type pdf)
 <use figs/framework.pdf>
-Package pdftex.def Info: figs/framework.pdf  used on input line 145.
+Package pdftex.def Info: figs/framework.pdf  used on input line 141.
 (pdftex.def)             Requested size: 204.76448pt x 148.63493pt.
 [3 <./figs/framework.pdf>] [4] [5] [6]
 Package epstopdf Info: Source file: <figs/spline.eps>
@@ -835,13 +835,13 @@ Package epstopdf Info: Source file: <figs/spline.eps>
 (epstopdf)                    size: 24412 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/spline-eps-conv
 erted-to.pdf figs/spline.eps>
-(epstopdf)             \includegraphics on input line 466.
+(epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
 <figs/spline-eps-converted-to.pdf, id=123, 505.89pt x 361.35pt>
 File: figs/spline-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/spline-eps-converted-to.pdf>
 Package pdftex.def Info: figs/spline-eps-converted-to.pdf  used on input line 4
-66.
+62.
 (pdftex.def)             Requested size: 252.94437pt x 180.67456pt.
  [7 <./figs/spline-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/racetrack.eps>
@@ -852,17 +852,14 @@ Package epstopdf Info: Source file: <figs/racetrack.eps>
 (epstopdf)                    size: 21313 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/racetrack-eps-c
 onverted-to.pdf figs/racetrack.eps>
-(epstopdf)             \includegraphics on input line 495.
+(epstopdf)             \includegraphics on input line 491.
 Package epstopdf Info: Output file is already uptodate.
 <figs/racetrack-eps-converted-to.pdf, id=167, 463.7325pt x 347.2975pt>
 File: figs/racetrack-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/racetrack-eps-converted-to.pdf>
 Package pdftex.def Info: figs/racetrack-eps-converted-to.pdf  used on input lin
-e 495.
+e 491.
 (pdftex.def)             Requested size: 231.86568pt x 173.64832pt.
-
-LaTeX Warning: Citation `Liniger_2014' on page 8 undefined on input line 503.
-
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/sn.pdf): PDF inclusion: found PDF ver
@@ -870,7 +867,7 @@ sion <1.7>, but at most version <1.5> allowed
 <figs/sn.pdf, id=168, 191.7564pt x 149.59889pt>
 File: figs/sn.pdf Graphic file (type pdf)
 <use figs/sn.pdf>
-Package pdftex.def Info: figs/sn.pdf  used on input line 516.
+Package pdftex.def Info: figs/sn.pdf  used on input line 512.
 (pdftex.def)             Requested size: 191.7559pt x 149.59851pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -884,22 +881,22 @@ Package epstopdf Info: Source file: <figs/globalroute.eps>
 (epstopdf)                    size: 11155 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/globalroute-eps
 -converted-to.pdf figs/globalroute.eps>
-(epstopdf)             \includegraphics on input line 639.
+(epstopdf)             \includegraphics on input line 635.
 Package epstopdf Info: Output file is already uptodate.
 <figs/globalroute-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
 File: figs/globalroute-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/globalroute-eps-converted-to.pdf>
 Package pdftex.def Info: figs/globalroute-eps-converted-to.pdf  used on input l
-ine 639.
+ine 635.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
  [10]
 
 LaTeX Warning: Reference `searchselection' on page 11 undefined on input line 6
-52.
+48.
 
 
 LaTeX Warning: Reference `searchselection' on page 11 undefined on input line 6
-53.
+49.
 
 [11 <./figs/globalroute-eps-converted-to.pdf>] (prosperctus.bbl
 Underfull \hbox (badness 2799) in paragraph at lines 50--54
@@ -933,10 +930,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10202 strings out of 475248
- 173000 string characters out of 5757812
+ 10201 strings out of 475248
+ 172986 string characters out of 5757812
  1943785 words of memory out of 5000000
- 31513 multiletter control sequences out of 15000+600000
+ 31512 multiletter control sequences out of 15000+600000
  600511 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,21n,117p,1604b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -964,7 +961,7 @@ msbm10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on prosperctus.pdf (13 pages, 482012 bytes).
+Output written on prosperctus.pdf (13 pages, 481355 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
