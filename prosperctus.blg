@@ -27,45 +27,45 @@ Warning--empty booktitle in Li2010OnTD
 Warning--empty author in TSIANOS20072
 
 Done.
-You've used 22 entries,
+You've used 23 entries,
             4087 wiz_defined-function locations,
-            1585 strings with 21255 characters,
-and the built_in function-call counts, 14473 in all, are:
-= -- 1154
-> -- 324
+            1590 strings with 21399 characters,
+and the built_in function-call counts, 14892 in all, are:
+= -- 1185
+> -- 333
 < -- 113
-+ -- 182
-- -- 56
-* -- 670
-:= -- 2216
-add.period$ -- 44
-call.type$ -- 22
++ -- 186
+- -- 58
+* -- 688
+:= -- 2291
+add.period$ -- 46
+call.type$ -- 23
 change.case$ -- 17
 chr.to.int$ -- 249
-cite$ -- 24
-duplicate$ -- 1054
-empty$ -- 1202
-format.name$ -- 72
-if$ -- 3371
+cite$ -- 25
+duplicate$ -- 1084
+empty$ -- 1250
+format.name$ -- 75
+if$ -- 3468
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 186
-newline$ -- 93
-num.names$ -- 21
-pop$ -- 442
+int.to.str$ -- 23
+missing$ -- 192
+newline$ -- 98
+num.names$ -- 22
+pop$ -- 461
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1139
+skip$ -- 1175
 stack$ -- 0
 substring$ -- 597
-swap$ -- 835
+swap$ -- 852
 text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 22
+type$ -- 23
 warning$ -- 2
-while$ -- 57
-width$ -- 24
-write$ -- 225
+while$ -- 58
+width$ -- 25
+write$ -- 235
 (There were 2 error messages)

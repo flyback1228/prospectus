@@ -126,4 +126,11 @@ R.~Lot and F.~Biral, ``A curvilinear abscissa approach for the lap time
   optimization of racing vehicles,'' \emph{IFAC Proceedings Volumes}, vol.~47,
   no.~3, pp. 7559--7565, 2014.
 
+\bibitem{filar2012competitive}
+\BIBentryALTinterwordspacing
+J.~Filar and K.~Vrieze, \emph{Competitive Markov Decision Processes}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Springer New York, 2012. [Online]. Available:
+  \url{https://books.google.com/books?id=uXDjBwAAQBAJ}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
