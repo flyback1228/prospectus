@@ -58,12 +58,8 @@ A.~Liniger, A.~Domahidi, and M.~Morari, ``Optimization-based autonomous racing
   no.~5, pp. 628--647, jul 2014.
 
 \bibitem{TSIANOS20072}
-\BIBentryALTinterwordspacing
-K.~I. Tsianos, I.~A. Sucan, and L.~E. Kavraki, ``Sampling-based robot motion
-  planning: Towards realistic applications,'' \emph{Computer Science Review},
-  vol.~1, no.~1, pp. 2--11, 2007. [Online]. Available:
-  \url{https://www.sciencedirect.com/science/article/pii/S1574013707000081}
-\BIBentrySTDinterwordspacing
+``Sampling-based robot motion planning: Towards realistic applications,''
+  \emph{Computer Science Review}, vol.~1, no.~1, pp. 2--11, 2007.
 
 \bibitem{lavalle1998rapidly}
 S.~M. LaValle, ``Rapidly-exploring random trees: A new tool for path
@@ -120,6 +116,10 @@ R.~Levien, ``The elastica: a mathematical history,'' EECS Department,
 \bibitem{prautzsch2002bezier}
 H.~Prautzsch, W.~Boehm, and M.~Paluszny, \emph{B{\'e}zier and B-spline
   techniques}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2002, vol.~6.
+
+\bibitem{phillips1996theory}
+G.~M. Phillips and P.~J. Taylor, \emph{Theory and applications of numerical
+  analysis}.\hskip 1em plus 0.5em minus 0.4em\relax Elsevier, 1996.
 
 \bibitem{LOT20147559}
 R.~Lot and F.~Biral, ``A curvilinear abscissa approach for the lap time

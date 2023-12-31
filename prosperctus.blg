@@ -15,52 +15,57 @@ I was expecting a `,' or a `}'---line 1273 of file bib/xilin_bib_modified.bib
  :   volume={2},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Liniger_2014"
+I was expecting a `,' or a `}'---line 1833 of file bib/xilin_bib_modified.bib
+ :  
+ :  author = {Konstantinos I. Tsianos and Ioan A. Sucan and Lydia E. Kavraki}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Li2010OnTD
+Warning--empty author in TSIANOS20072
 
 Done.
-You've used 21 entries,
+You've used 22 entries,
             4087 wiz_defined-function locations,
-            1585 strings with 21303 characters,
-and the built_in function-call counts, 14266 in all, are:
-= -- 1146
-> -- 327
+            1585 strings with 21255 characters,
+and the built_in function-call counts, 14473 in all, are:
+= -- 1154
+> -- 324
 < -- 113
-+ -- 183
-- -- 57
-* -- 668
-:= -- 2192
-add.period$ -- 42
-call.type$ -- 21
++ -- 182
+- -- 56
+* -- 670
+:= -- 2216
+add.period$ -- 44
+call.type$ -- 22
 change.case$ -- 17
 chr.to.int$ -- 249
-cite$ -- 22
-duplicate$ -- 1031
-empty$ -- 1160
-format.name$ -- 73
-if$ -- 3316
+cite$ -- 24
+duplicate$ -- 1054
+empty$ -- 1202
+format.name$ -- 72
+if$ -- 3371
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 183
-newline$ -- 92
+int.to.str$ -- 22
+missing$ -- 186
+newline$ -- 93
 num.names$ -- 21
-pop$ -- 428
+pop$ -- 442
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1117
+skip$ -- 1139
 stack$ -- 0
 substring$ -- 597
-swap$ -- 828
+swap$ -- 835
 text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 21
-warning$ -- 1
+type$ -- 22
+warning$ -- 2
 while$ -- 57
-width$ -- 23
-write$ -- 222
-(There was 1 error message)
+width$ -- 24
+write$ -- 225
+(There were 2 error messages)
