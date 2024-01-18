@@ -24,18 +24,100 @@
 \bibitem{eskandarian2021research}
 A.~Eskandarian, C.~Wu, and C.~Sun, ``Research advances and challenges of
   autonomous and connected ground vehicles,'' \emph{IEEE Transactions on
-  Intelligent Transportation Systems}, vol.~22, no.~2, pp. 683--711, 2021.
+  Intelligent Transportation Systems}, vol.~22, no.~2, pp. 683--711, 2019.
 
 \bibitem{Li2010OnTD}
-\BIBentryALTinterwordspacing
-J.~Li, J.~Yi, Z.~Liu, and J.~Lu, ``On the dynamic stability and agility of
-  aggressive vehicle maneuvers: A pendulum-turn maneuver example,'' 2010.
-  [Online]. Available: \url{https://api.semanticscholar.org/CorpusID:110534693}
-\BIBentrySTDinterwordspacing
+J.~Yi, J.~Li, J.~Lu, and Z.~Liu, ``On the stability and agility of aggressive
+  vehicle maneuvers: A pendulum-turn maneuver example,'' \emph{{IEEE} Trans.
+  Contr. Syst. Technol.}, vol.~20, no.~3, pp. 663--676, 2012.
 
 \bibitem{paden2016survey}
-B.~Paden, M.~Cap, S.~Z. Yong, D.~Yershov, and E.~Frazzoli, ``A survey of motion
-  planning and control techniques for self-driving urban vehicles,'' 2016.
+B.~Paden, M.~{\v{C}}{\'a}p, S.~Z. Yong, D.~Yershov, and E.~Frazzoli, ``A survey
+  of motion planning and control techniques for self-driving urban vehicles,''
+  \emph{IEEE trans. intell. veh.}, vol.~1, no.~1, pp. 33--55, 2016.
+
+\bibitem{likhachev2003ara}
+M.~Likhachev, G.~J. Gordon, and S.~Thrun, ``Ara*: Anytime a* with provable
+  bounds on sub-optimality,'' \emph{Adv. Neural Inf. Process. Syst.}, vol.~16,
+  2003.
+
+\bibitem{lavalle2001randomized}
+S.~M. LaValle and J.~J. Kuffner~Jr, ``Randomized kinodynamic planning,''
+  \emph{The international journal of robotics research}, vol.~20, no.~5, pp.
+  378--400, 2001.
+
+\bibitem{ratliff2009chomp}
+N.~Ratliff, M.~Zucker, J.~A. Bagnell, and S.~Srinivasa, ``Chomp: Gradient
+  optimization techniques for efficient motion planning,'' in \emph{Proc. IEEE
+  Int. Conf. Robot. Autom.}, 2009, pp. 489--494.
+
+\bibitem{kalakrishnan2011stomp}
+M.~Kalakrishnan, S.~Chitta, E.~Theodorou, P.~Pastor, and S.~Schaal, ``Stomp:
+  Stochastic trajectory optimization for motion planning,'' in \emph{Proc. IEEE
+  Int. Conf. Robot. Autom.}, 2011, pp. 4569--4574.
+
+\bibitem{domenighini2023mlt}
+M.~Domenighini, L.~Bartali, E.~Grabovic, and M.~Gabiccini, ``Minimum-lap-time
+  planning of multibody vehicle models via the articulated-body algorithm,''
+  \emph{Designs}, vol.~7, no.~3, 2023.
+
+\bibitem{coulter1992implementation}
+R.~C. Coulter \emph{et~al.}, \emph{Implementation of the pure pursuit path
+  tracking algorithm}.\hskip 1em plus 0.5em minus 0.4em\relax Carnegie Mellon
+  University, The Robotics Institute, 1992.
+
+\bibitem{park2014development}
+M.-W. Park, S.-W. Lee, and W.-Y. Han, ``Development of lateral control system
+  for autonomous vehicle based on adaptive pure pursuit algorithm,'' in
+  \emph{14th Int. Conf. Control, Autom. Syst}, 2014, pp. 1443--1447.
+
+\bibitem{thrun2006stanley}
+S.~Thrun, M.~Montemerlo, H.~Dahlkamp, D.~Stavens, A.~Aron, J.~Diebel, P.~Fong,
+  J.~Gale, M.~Halpenny, G.~Hoffmann \emph{et~al.}, ``Stanley: The robot that
+  won the darpa grand challenge,'' \emph{Journal of field Robotics}, vol.~23,
+  no.~9, pp. 661--692, 2006.
+
+\bibitem{abdelmoniem2020path}
+A.~AbdElmoniem, A.~Osama, M.~Abdelaziz, and S.~A. Maged, ``A path-tracking
+  algorithm using predictive stanley lateral controller,'' \emph{Int. J. Adv.
+  Robot. Syst.}, vol.~17, no.~6, p. 1729881420974852, 2020.
+
+\bibitem{kim2011control}
+D.~Kim, J.~Kang, and K.~Yi, ``Control strategy for high-speed autonomous
+  driving in structured road,'' in \emph{Proc. IEEE Conf. Intell. Transport.
+  Syst.}, 2011, pp. 186--191.
+
+\bibitem{mouri1997automatic}
+H.~Mouri and H.~Furusho, ``Automatic path tracking using linear quadratic
+  control theory,'' in \emph{Proc. IEEE Conf. Intell. Transport. Syst.}, 1997,
+  pp. 948--953.
+
+\bibitem{krid2016path}
+M.~Krid, Z.~Zamzami, and F.~Benamar, ``Path tracking controllers for fast
+  skidding rover,'' in \emph{Informatics in Control, Automation and Robotics
+  12th International Conference}, 2016, pp. 29--47.
+
+\bibitem{yoo2005direct}
+S.~J. Yoo, J.~B. Park, and Y.~H. Choi, ``Direct adaptive control using self
+  recurrent wavelet neural network via adaptive learning rates for stable path
+  tracking of mobile robots,'' in \emph{Proc. Amer. Control Conf.}\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2005, pp. 288--293.
+
+\bibitem{yang1998intelligent}
+X.~Yang, K.~He, M.~Guo, and B.~Zhang, ``An intelligent predictive control
+  approach to path tracking problem of autonomous mobile robot,'' in
+  \emph{{IEEE} Trans. Syst., Man, Cybern.}, vol.~4, 1998, pp. 3301--3306.
+
+\bibitem{al2013applying}
+A.~S. Al-Araji, M.~F. Abbod, and H.~S. Al-Raweshidy, ``Applying posture
+  identifier in designing an adaptive nonlinear predictive controller for
+  nonholonomic mobile robot,'' \emph{Neurocomputing}, vol.~99, pp. 543--554,
+  2013.
+
+\bibitem{taghavifar2019neural}
+H.~Taghavifar, ``Neural network autoregressive with exogenous input assisted
+  multi-constraint nonlinear predictive control of autonomous vehicles,''
+  \emph{{IEEE} Trans. Veh. Technol.}, vol.~68, no.~7, pp. 6293--6304, 2019.
 
 \bibitem{meywerk2015vehicle}
 M.~Meywerk, \emph{Vehicle dynamics}.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -58,8 +140,9 @@ A.~Liniger, A.~Domahidi, and M.~Morari, ``Optimization-based autonomous racing
   no.~5, pp. 628--647, jul 2014.
 
 \bibitem{TSIANOS20072}
-``Sampling-based robot motion planning: Towards realistic applications,''
-  \emph{Computer Science Review}, vol.~1, no.~1, pp. 2--11, 2007.
+K.~I. Tsianos, I.~A. Sucan, and L.~E. Kavraki, ``Sampling-based robot motion
+  planning: Towards realistic applications,'' \emph{Computer Science Review},
+  vol.~1, no.~1, pp. 2--11, 2007.
 
 \bibitem{lavalle1998rapidly}
 S.~M. LaValle, ``Rapidly-exploring random trees: A new tool for path
@@ -106,8 +189,9 @@ M.~Spagnuolo and U.~Andreaus, ``A targeted review on large deformations of
 \bibitem{kim2021physicsinformed}
 S.~H. Kim, H.-S. Chang, C.-H. Shih, N.~K. Uppalapati, U.~Halder, G.~Krishnan,
   P.~G. Mehta, and M.~Gazzola, ``A physics-informed, vision-based method to
-  reconstruct all deformation modes in slender bodies,'' \emph{Proc. IEEE Int.
-  Conf. Robot. Autom.}, pp. 4810--4817, 2021.
+  reconstruct all deformation modes in slender bodies,'' in \emph{Proc. IEEE
+  Int. Conf. Robot. Autom.}\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2022,
+  pp. 4810--4817.
 
 \bibitem{Levien:EECS-2008-103}
 R.~Levien, ``The elastica: a mathematical history,'' EECS Department,

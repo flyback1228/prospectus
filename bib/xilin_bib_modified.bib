@@ -457,8 +457,8 @@
 	NUMBER    =  "1",
 	PAGES 	=  "37-49"  }
 
-@INPROCEEDINGS{anytimemotion,
 
+@INPROCEEDINGS{anytimemotion,
   author={Karaman, Sertac and Walter, Matthew R. and Perez, Alejandro and Frazzoli, Emilio and Teller, Seth},
   booktitle={2011 IEEE Int. Conf. Robot. Autom.}, 
   title={Anytime Motion Planning using the RRT*}, 
@@ -633,7 +633,7 @@ doi={10.1109/TITS.2020.3031962}}
 @inproceedings{elasticband,
   title={Emergency path planning for autonomous vehicles using elastic band theory},
   author={Hilgert, Jens and Hirsch, Karina and Bertram, Torsten and Hiller, Manfred},
-  booktitle=AIM
+  booktitle=AIM,
   volume={2},
   pages={1390--1395},
   year={2003},
@@ -819,14 +819,16 @@ publisher = {Taylor & Francis}
 	year = {2019}
 }
 
-
-@article{kim2021physicsinformed,
+@inproceedings{kim2021physicsinformed,
 	title={A physics-informed, vision-based method to reconstruct all deformation modes in slender bodies},
-	author={Seung Hyun Kim and Heng-Sheng Chang and Chia-Hsien Shih and Naveen Kumar Uppalapati and Udit Halder and Girish Krishnan and Prashant G. Mehta and Mattia Gazzola},
-	journal=ICRA,
-	year={2021},
-	pages={4810-4817}
+	author={Kim, Seung Hyun and Chang, Heng-Sheng and Shih, Chia-Hsien and Uppalapati, Naveen Kumar and Halder, Udit and Krishnan, Girish and Mehta, Prashant G and Gazzola, Mattia},
+	booktitle=ICRA,
+	pages={4810--4817},
+	year={2022},
+	organization={IEEE}
 }
+
+
 
 @techreport{Levien:EECS-2008-103,
 	Author = {Levien, Raph},
@@ -840,7 +842,7 @@ publisher = {Taylor & Francis}
 @inproceedings{cartograper,
   title={Real-time loop closure in 2D LIDAR SLAM},
   author={Hess, Wolfgang and Kohler, Damon and Rapp, Holger and Andor, Daniel},
-  booktitle=ICRA,
+  journal=ICRA,
   pages={1271--1278},
   year={2016},
   organization={IEEE}
@@ -856,31 +858,38 @@ publisher = {Taylor & Francis}
   organization={Springer}
 }
 
-@misc{paden2016survey,
-	title={A Survey of Motion Planning and Control Techniques for Self-driving Urban Vehicles}, 
-	author={Brian Paden and Michal Cap and Sze Zheng Yong and Dmitry Yershov and Emilio Frazzoli},
+
+@article{paden2016survey,
+	title={A survey of motion planning and control techniques for self-driving urban vehicles},
+	author={Paden, Brian and {\v{C}}{\'a}p, Michal and Yong, Sze Zheng and Yershov, Dmitry and Frazzoli, Emilio},
+	journal={IEEE trans. intell. veh.},
+	volume={1},
+	number={1},
+	pages={33--55},
 	year={2016},
-	eprint={1604.07446},
-	archivePrefix={arXiv},
-	primaryClass={cs.RO}
+	publisher={IEEE}
 }
 
-@ARTICLE{eskandarian2021research,
+
+@article{eskandarian2021research,
+	title={Research advances and challenges of autonomous and connected ground vehicles},
 	author={Eskandarian, Azim and Wu, Chaoxian and Sun, Chuanyang},
-	journal={IEEE Transactions on Intelligent Transportation Systems}, 
-	title={Research Advances and Challenges of Autonomous and Connected Ground Vehicles}, 
-	year={2021},
+	journal={IEEE Transactions on Intelligent Transportation Systems},
 	volume={22},
 	number={2},
-	pages={683-711},
-	doi={10.1109/TITS.2019.2958352}}
-
-@inproceedings{Li2010OnTD,
-	title={On the Dynamic Stability and Agility of Aggressive Vehicle Maneuvers: A Pendulum-Turn Maneuver Example},
-	author={Jingliang Li and Jingang Yi and Zhaodu Liu and Jianbo Lu},
-	year={2010},
-	url={https://api.semanticscholar.org/CorpusID:110534693}
+	pages={683--711},
+	year={2019},
+	publisher={IEEE}
 }
+
+@ARTICLE{Li2010OnTD,
+	author={Yi, Jingang and Li, Jingliang and Lu, Jianbo and Liu, Zhaodu},
+	journal=IEEE_J_CST, 
+	title={On the Stability and Agility of Aggressive Vehicle Maneuvers: A Pendulum-Turn Maneuver Example}, 
+	year={2012},
+	volume={20},
+	number={3},
+	pages={663-676}}
 
 @book{meywerk2015vehicle,
 	title={Vehicle dynamics},
@@ -913,7 +922,7 @@ publisher = {Taylor & Francis}
 	number = {1},
 	pages = {2-11},
 	year = {2007},
-	issn = {1574-0137}
+	issn = {1574-0137},
 	author = {Konstantinos I. Tsianos and Ioan A. Sucan and Lydia E. Kavraki}
 }
 
@@ -933,3 +942,160 @@ publisher = {Taylor & Francis}
 	publisher={Springer New York}
 }
 
+@article{likhachev2003ara,
+	title={ARA*: Anytime A* with provable bounds on sub-optimality},
+	author={Likhachev, Maxim and Gordon, Geoffrey J and Thrun, Sebastian},
+	journal={Adv. Neural Inf. Process. Syst.},
+	volume={16},
+	year={2003}
+}
+
+@article{lavalle2001randomized,
+	title={Randomized kinodynamic planning},
+	author={LaValle, Steven M and Kuffner Jr, James J},
+	journal={The international journal of robotics research},
+	volume={20},
+	number={5},
+	pages={378--400},
+	year={2001},
+	publisher={SAGE Publications}
+}
+
+@inproceedings{ratliff2009chomp,
+	title={CHOMP: Gradient optimization techniques for efficient motion planning},
+	author={Ratliff, Nathan and Zucker, Matt and Bagnell, J Andrew and Srinivasa, Siddhartha},
+	booktitle=ICRA,
+	pages={489--494},
+	year={2009}
+}
+
+@inproceedings{kalakrishnan2011stomp,
+	title={STOMP: Stochastic trajectory optimization for motion planning},
+	author={Kalakrishnan, Mrinal and Chitta, Sachin and Theodorou, Evangelos and Pastor, Peter and Schaal, Stefan},
+	booktitle=ICRA,
+	pages={4569--4574},
+	year={2011}
+}
+
+
+@Article{domenighini2023mlt,
+	AUTHOR = {Domenighini, Marcello and Bartali, Lorenzo and Grabovic, Eugeniu and Gabiccini, Marco},
+	TITLE = {Minimum-Lap-Time Planning of Multibody Vehicle Models via the Articulated-Body Algorithm},
+	JOURNAL = {Designs},
+	VOLUME = {7},
+	YEAR = {2023},
+	NUMBER = {3},
+	ARTICLE-NUMBER = {65},
+	ISSN = {2411-9660}
+}
+
+@inproceedings{park2014path,
+	title={When path tracking using look-ahead distance about the lateral error method and the velocity change method tracking comparison},
+	author={Park, Jun-Beom and Bae, Seong-Ho and Koo, Bo-Seung and Kim, Jung-Ha},
+	booktitle={14th Int. Conf. Control, Autom. Syst},
+	pages={1643--1647},
+	year={2014}
+}
+
+@book{coulter1992implementation,
+	title={Implementation of the pure pursuit path tracking algorithm},
+	author={Coulter, R Craig and others},
+	year={1992},
+	publisher={Carnegie Mellon University, The Robotics Institute}
+}
+
+@inproceedings{park2014development,
+	title={Development of lateral control system for autonomous vehicle based on adaptive pure pursuit algorithm},
+	author={Park, Myung-Wook and Lee, Sang-Woo and Han, Woo-Yong},
+	booktitle={14th Int. Conf. Control, Autom. Syst},
+	pages={1443--1447},
+	year={2014}
+}
+
+@article{thrun2006stanley,
+	title={Stanley: The robot that won the DARPA Grand Challenge},
+	author={Thrun, Sebastian and Montemerlo, Mike and Dahlkamp, Hendrik and Stavens, David and Aron, Andrei and Diebel, James and Fong, Philip and Gale, John and Halpenny, Morgan and Hoffmann, Gabriel and others},
+	journal={Journal of field Robotics},
+	volume={23},
+	number={9},
+	pages={661--692},
+	year={2006}
+}
+
+@article{abdelmoniem2020path,
+	title={A path-tracking algorithm using predictive Stanley lateral controller},
+	author={AbdElmoniem, Ahmed and Osama, Ahmed and Abdelaziz, Mohamed and Maged, Shady A},
+	journal={Int. J. Adv. Robot. Syst.},
+	volume={17},
+	number={6},
+	pages={1729881420974852},
+	year={2020}
+}
+
+@article{snider2009automatic,
+	title={Automatic steering methods for autonomous automobile path tracking},
+	author={Snider, Jarrod M and others},
+	journal={Robotics Institute, Pittsburgh, PA, Tech. Rep. CMU-RITR-09-08},
+	year={2009}
+}
+
+@inproceedings{kim2011control,
+	title={Control strategy for high-speed autonomous driving in structured road},
+	author={Kim, Dongwook and Kang, Juyoung and Yi, Kyoungsu},
+	booktitle=ITS,
+	pages={186--191},
+	year={2011}
+}
+
+@inproceedings{mouri1997automatic,
+	title={Automatic path tracking using linear quadratic control theory},
+	author={Mouri, Hiroshi and Furusho, Hiroyuki},
+	booktitle=ITS,
+	pages={948--953},
+	year={1997}
+}
+
+@inproceedings{krid2016path,
+	title={Path tracking controllers for fast skidding rover},
+	author={Krid, Mohamed and Zamzami, Ziad and Benamar, Faiz},
+	booktitle={Informatics in Control, Automation and Robotics 12th International Conference},
+	pages={29--47},
+	year={2016}
+}
+
+@inproceedings{yoo2005direct,
+	title={Direct adaptive control using self recurrent wavelet neural network via adaptive learning rates for stable path tracking of mobile robots},
+	author={Yoo, Sung Jin and Park, Jin Bae and Choi, Yoon Ho},
+	booktitle=ACC,
+	pages={288--293},
+	year={2005},
+	organization={IEEE}
+}
+
+@inproceedings{yang1998intelligent,
+	title={An intelligent predictive control approach to path tracking problem of autonomous mobile robot},
+	author={Yang, Xinxin and He, Kezhong and Guo, Muhe and Zhang, Bo},
+	booktitle=IEEE_J_SMC,
+	volume={4},
+	pages={3301--3306},
+	year={1998}
+}
+
+@article{al2013applying,
+	title={Applying posture identifier in designing an adaptive nonlinear predictive controller for nonholonomic mobile robot},
+	author={Al-Araji, Ahmed S and Abbod, Maysam F and Al-Raweshidy, Hamed S},
+	journal={Neurocomputing},
+	volume={99},
+	pages={543--554},
+	year={2013}
+}
+
+@article{taghavifar2019neural,
+	title={Neural network autoregressive with exogenous input assisted multi-constraint nonlinear predictive control of autonomous vehicles},
+	author={Taghavifar, Hamid},
+	journal=IEEE_J_VT,
+	volume={68},
+	number={7},
+	pages={6293--6304},
+	year={2019}
+}

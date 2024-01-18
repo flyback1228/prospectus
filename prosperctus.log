@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.23)  30 DEC 2023 23:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.7.2)  17 JAN 2024 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./prosperctus.tex
 (prosperctus.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
+L3 programming layer <2023-06-16>
 (IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -13,72 +13,36 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpdimenA=\dimen140
 \@IEEEtrantmpdimenB=\dimen141
 \@IEEEtrantmpdimenC=\dimen142
-\@IEEEtrantmpcountA=\count185
-\@IEEEtrantmpcountB=\count186
-\@IEEEtrantmpcountC=\count187
+\@IEEEtrantmpcountA=\count181
+\@IEEEtrantmpcountB=\count182
+\@IEEEtrantmpcountC=\count183
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-03.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 50
+3.
+LaTeX Font Info:    No file TUptm.fd. on input line 503.
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 503.
+
 ** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen144
 \CLASSINFOnormalsizeunitybaselineskip=\dimen145
 \IEEEnormaljot=\dimen146
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 1090.
 
 \IEEEquantizedlength=\dimen147
 \IEEEquantizedlengthdiff=\dimen148
@@ -92,40 +56,40 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen156
 \IEEEiedmathlabelsep=\dimen157
 \IEEEiedtopsep=\skip48
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@IEEEsubequation=\count192
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@IEEEsubequation=\count188
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count193
-\c@table=\count194
-\@IEEEeqnnumcols=\count195
-\@IEEEeqncolcnt=\count196
-\@IEEEsubeqnnumrollback=\count197
+\c@figure=\count189
+\c@table=\count190
+\@IEEEeqnnumcols=\count191
+\@IEEEeqncolcnt=\count192
+\@IEEEsubeqnnumrollback=\count193
 \@IEEEquantizeheightA=\dimen158
 \@IEEEquantizeheightB=\dimen159
 \@IEEEquantizeheightC=\dimen160
 \@IEEEquantizeprevdepth=\dimen161
-\@IEEEquantizemultiple=\count198
+\@IEEEquantizemultiple=\count194
 \@IEEEquantizeboxA=\box51
 \@IEEEtmpitemindent=\dimen162
 \IEEEPARstartletwidth=\dimen163
-\c@IEEEbiography=\count199
+\c@IEEEbiography=\count195
 \@IEEEtranrubishbin=\box52
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/savesym\savesym.sty
+) (C:\Program Files\MiKTeX\tex/latex/savesym\savesym.sty
 Package: savesym 2013/09/02 v1.2 Saves and restores symbols (JG)
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/easy\easybmat.sty
+(C:\Program Files\MiKTeX\tex/latex/easy\easybmat.sty
 Document Style `easybmat' v1.0 <2001/06/13>.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/easy\easy.sty
+(C:\Program Files\MiKTeX\tex/latex/easy\easy.sty
 Document Style `easy' v1.1 <2001/05/31>.
 Package: easy 2001/05/31 v1.1
-\@easy@level=\count266
-\@easy@ncol=\count267
-\@easy@nrow=\count268
-\@easy@cnt=\count269
+\@easy@level=\count196
+\@easy@ncol=\count197
+\@easy@nrow=\count198
+\@easy@cnt=\count199
 \@easy@boxviii=\box53
 \@easy@minxviii=\dimen164
 \@easy@minyviii=\dimen165
@@ -232,7 +196,7 @@ Package: easy 2001/05/31 v1.1
 Package: easybmat 2001/05/31 v1.1
 \@bmat@size@rule=\dimen314
 \@bmat@size@dash=\dimen315
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/etex-pkg\etex.sty
+) (C:\Program Files\MiKTeX\tex/latex/etex-pkg\etex.sty
 Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
 
 
@@ -242,34 +206,34 @@ Package etex Warning: Extended allocation already in use.
 (etex)                \RequirePackage{etex}
 (etex)                at the start of the document.
 
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen316
 ))
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen317
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count270
+\inf@bad=\count266
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count271
-\leftroot@=\count272
+\uproot@=\count267
+\leftroot@=\count268
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count273
-\DOTSCASE@=\count274
+\classnum@=\count269
+\DOTSCASE@=\count270
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -282,20 +246,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen318
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count275
+\macc@depth=\count271
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count276
+\c@MaxMatrixCols=\count272
 \dotsspace@=\muskip16
-\c@parentequation=\count277
-\dspbrk@lvl=\count278
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
 \tag@help=\toks19
-\row@=\count279
-\column@=\count280
-\maxfields@=\count281
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
 \andhelp@=\toks20
 \eqnshift@=\dimen319
 \alignsep@=\dimen320
@@ -310,90 +274,81 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
-y
+))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: xetex.def on input line 107.
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen325
 \Gin@req@width=\dimen326
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
-ty
+(C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
- (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)))
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) (C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip54
 \subfigcapskip=\skip55
@@ -401,25 +356,25 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip56
 \subfigcapmargin=\dimen328
 \subfiglabelskip=\skip57
-\c@subfigure=\count282
-\c@lofdepth=\count283
-\c@subtable=\count284
-\c@lotdepth=\count285
+\c@subfigure=\count278
+\c@lofdepth=\count279
+\c@subtable=\count280
+\c@lotdepth=\count281
+
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg
-)
+(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg)
 \subfig@top=\skip58
 \subfig@bottom=\skip59
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks24
 \verbatim@line=\toks25
 \verbatim@in@stream=\read2
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen329
 \ar@mcellbox=\box63
@@ -429,22 +384,22 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \backup@length=\skip61
 \ar@cellbox=\box64
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+(C:\Program Files\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
@@ -452,45 +407,51 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+))
+(C:\Program Files\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\stmaryrd.sty
+(C:\Program Files\MiKTeX\tex/latex/stmaryrd\stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+(C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip62
-\multirow@cntb=\count286
+\multirow@cntb=\count282
 \multirow@dima=\skip63
 \bigstrutjot=\dimen331
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e
-.sty
+(C:\Program Files\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count287
- (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+\c@AlgoLine=\count283
+
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip64
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+(C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count288
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+\c@checkoddpage=\count284
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+(C:\Program Files\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip65
@@ -523,22 +484,23 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip80
 \algotitleheightruledefault=\skip81
 \algotitleheightrule=\skip82
-\c@algocfline=\count289
-\c@algocfproc=\count290
-\c@algocf=\count291
+\c@algocfline=\count285
+\c@algocfproc=\count286
+\c@algocf=\count287
 \algocf@algoframe=\box71
 \algocf@algobox=\box72
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
-sty
+(C:\Program Files\MiKTeX\tex/latex/algorithms\algorithmic.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count292
-\c@ALC@line=\count293
-\c@ALC@rem=\count294
-\c@ALC@depth=\count295
+\c@ALC@unique=\count288
+\c@ALC@line=\count289
+\c@ALC@rem=\count290
+\c@ALC@depth=\count291
 \ALC@tlm=\skip83
 \algorithmicindent=\skip84
-) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup8
 \symboldletters=\mathgroup9
@@ -549,15 +511,15 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 \symboldlasy=\mathgroup11
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count296
-\Gm@cntv=\count297
-\c@Gm@tempcnt=\count298
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
 \Gm@bindingoffset=\dimen338
 \Gm@wd@mp=\dimen339
 \Gm@odd@mp=\dimen340
@@ -568,12 +530,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen345
 \Gm@dimlist=\toks27
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JB
-IG2,.JB2,.eps,.pdf]
+(grfext)             [.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.j
+pf,.JPF,.bmp,.BMP,.ps,.PS,.eps,.EPS,.mps,.MPS,.pdf]
 (grfext)             \AppendGraphicsExtensions on input line 29.
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+
+(C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen346
 \lightrulewidth=\dimen347
@@ -585,36 +548,36 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen353
 \cmidrulekern=\dimen354
 \defaultaddspace=\dimen355
-\@cmidla=\count299
-\@cmidlb=\count300
+\@cmidla=\count295
+\@cmidlb=\count296
 \@aboverulesep=\dimen356
 \@belowrulesep=\dimen357
-\@thisruleclass=\count301
-\@lastruleclass=\count302
+\@thisruleclass=\count297
+\@lastruleclass=\count298
 \@thisrulewidth=\dimen358
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+(C:\Program Files\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+
+(C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks28
 \XKV@tempa@toks=\toks29
 )
-\XKV@depth=\count303
+\XKV@depth=\count299
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+(C:\Program Files\MiKTeX\tex/latex/adjustbox\adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+(C:\Program Files\MiKTeX\tex/latex/adjustbox\trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
-ty
+(C:\Program Files\MiKTeX\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box73
 )
@@ -622,10 +585,10 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@lly=\dimen360
 \tc@urx=\dimen361
 \tc@ury=\dimen362
-Package trimclip Info: Using driver 'tc-pdftex.def'.
+Package trimclip Info: Using driver 'tc-xetex.def'.
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+(C:\Program Files\MiKTeX\tex/latex/adjustbox\tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
 \adjbox@Width=\dimen363
 \adjbox@Height=\dimen364
@@ -636,17 +599,18 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen369
 \adjbox@ptotalheight=\dimen370
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+(C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box74
-\sift@deathcycles=\count304
+\sift@deathcycles=\count300
 \@vwid@loff=\dimen371
 \@vwid@roff=\dimen372
-)) (C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+))
+(C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+(C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen373
 \captionmargin=\dimen374
 \caption@leftmargin=\dimen375
@@ -667,33 +631,35 @@ malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
 ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
-\fi  on input line 1175.
+\fi  on input line 1176.
 )
 
 Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count305
-\c@continuedfloat=\count306
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
 Package caption Info: subfigure package is loaded.
-)
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-LaTeX Info: Redefining \subref on input line 189.
+) (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+LaTeX Info: Redefining \subref on input line 191.
 Package subcaption Info: The counter `subfigure' was already defined by
-(subcaption)             an unknown document class or package on input line 238
+(subcaption)             an unknown document class or package on input line 239
 .
 Package subcaption Info: The counter `subtable' was already defined by
-(subcaption)             an unknown document class or package on input line 238
+(subcaption)             an unknown document class or package on input line 239
 .
 )
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count307
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
+File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
+\g__graphics_track_int=\count303
 \l__pdf_internal_box=\box75
-) (prosperctus.aux
+\g__pdf_backend_object_int=\count304
+\g__pdf_backend_annotation_int=\count305
+\g__pdf_backend_link_int=\count306
+)
+(prosperctus.aux
 
 LaTeX Warning: Label `quality' multiply defined.
 
@@ -709,33 +675,104 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+8.
+ (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 
--- Lines per column: 57 (approximate, difference = 2.565pt).
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen381
-\scratchbox=\box76
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen382
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks31
-)
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 48.
+
+-- Lines per column: 57 (approximate, difference = 2.565pt).
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -748,11 +785,11 @@ ii
 * \textheight=686.565pt
 * \oddsidemargin=-18.06749pt
 * \evensidemargin=-18.06749pt
-* \topmargin=-50.80312pt
+* \topmargin=-50.86513pt
 * \headheight=12.0pt
-* \headsep=18.56761pt
+* \headsep=18.62962pt
 * \topskip=12.0pt
-* \footskip=40.5821pt
+* \footskip=40.55286pt
 * \marginparwidth=20.0pt
 * \marginparsep=10.0pt
 * \columnsep=12.0pt
@@ -771,27 +808,31 @@ Package caption Info: End \AtBeginDocument code.
 
 LaTeX Warning: No \author given.
 
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 52.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
 
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 53
 .
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+(C:\Program Files\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 3.
 
-(C:\Users\lixil\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+(C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
@@ -800,115 +841,621 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
 
 
-pdfTeX warning: pdflatex.exe (file ./figs/fig_4_wheel.PDF): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<figs/fig_4_wheel.PDF, id=1, 198.7425pt x 161.64389pt>
+LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 58.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 64.
+[1]
 File: figs/fig_4_wheel.PDF Graphic file (type pdf)
 <use figs/fig_4_wheel.PDF>
-Package pdftex.def Info: figs/fig_4_wheel.PDF  used on input line 63.
-(pdftex.def)             Requested size: 202.3529pt x 164.586pt.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/fig_2_wheel.PDF): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<figs/fig_2_wheel.PDF, id=2, 176.5797pt x 151.5261pt>
 File: figs/fig_2_wheel.PDF Graphic file (type pdf)
 <use figs/fig_2_wheel.PDF>
-Package pdftex.def Info: figs/fig_2_wheel.PDF  used on input line 64.
-(pdftex.def)             Requested size: 202.3529pt x 173.64323pt.
-[1{C:/Users/lixil/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/li
-xil/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/fig_4_wh
-eel.PDF> <./figs/fig_2_wheel.PDF>]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 72.
- [2]
 
-pdfTeX warning: pdflatex.exe (file ./figs/framework.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<figs/framework.pdf, id=93, 204.765pt x 148.6353pt>
-File: figs/framework.pdf Graphic file (type pdf)
-<use figs/framework.pdf>
-Package pdftex.def Info: figs/framework.pdf  used on input line 142.
-(pdftex.def)             Requested size: 204.76448pt x 148.63493pt.
-[3 <./figs/framework.pdf>] [4] [5] [6]
-Package epstopdf Info: Source file: <figs/spline.eps>
-(epstopdf)                    date: 2023-12-25 14:08:30
-(epstopdf)                    size: 39181 bytes
-(epstopdf)             Output file: <figs/spline-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-12-25 16:20:38
-(epstopdf)                    size: 24412 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=figs/spline-eps-conv
-erted-to.pdf figs/spline.eps>
-(epstopdf)             \includegraphics on input line 463.
-Package epstopdf Info: Output file is already uptodate.
-<figs/spline-eps-converted-to.pdf, id=123, 505.89pt x 361.35pt>
-File: figs/spline-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/spline-eps-converted-to.pdf>
-Package pdftex.def Info: figs/spline-eps-converted-to.pdf  used on input line 4
-63.
-(pdftex.def)             Requested size: 252.94437pt x 180.67456pt.
- [7 <./figs/spline-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figs/racetrack.eps>
-(epstopdf)                    date: 2023-12-25 14:08:29
-(epstopdf)                    size: 32258 bytes
-(epstopdf)             Output file: <figs/racetrack-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-12-25 16:21:12
-(epstopdf)                    size: 21313 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=figs/racetrack-eps-c
-onverted-to.pdf figs/racetrack.eps>
-(epstopdf)             \includegraphics on input line 492.
-Package epstopdf Info: Output file is already uptodate.
-<figs/racetrack-eps-converted-to.pdf, id=167, 463.7325pt x 347.2975pt>
-File: figs/racetrack-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/racetrack-eps-converted-to.pdf>
-Package pdftex.def Info: figs/racetrack-eps-converted-to.pdf  used on input lin
-e 492.
-(pdftex.def)             Requested size: 231.86568pt x 173.64832pt.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/sn.pdf): PDF inclusion: found PDF ver
-sion <1.7>, but at most version <1.5> allowed
-<figs/sn.pdf, id=168, 191.7564pt x 149.59889pt>
-File: figs/sn.pdf Graphic file (type pdf)
-<use figs/sn.pdf>
-Package pdftex.def Info: figs/sn.pdf  used on input line 513.
-(pdftex.def)             Requested size: 191.7559pt x 149.59851pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./figs/racetrack-eps-converted-to.pdf>] [9 <./figs/sn.pdf>]
-Package epstopdf Info: Source file: <figs/globalroute.eps>
-(epstopdf)                    date: 2023-12-20 12:30:36
-(epstopdf)                    size: 57916 bytes
-(epstopdf)             Output file: <figs/globalroute-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-12-20 12:30:36
-(epstopdf)                    size: 11155 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=figs/globalroute-eps
--converted-to.pdf figs/globalroute.eps>
-(epstopdf)             \includegraphics on input line 638.
-Package epstopdf Info: Output file is already uptodate.
-<figs/globalroute-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
-File: figs/globalroute-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/globalroute-eps-converted-to.pdf>
-Package pdftex.def Info: figs/globalroute-eps-converted-to.pdf  used on input l
-ine 638.
-(pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
- [10]
-
-LaTeX Warning: Reference `searchselection' on page 11 undefined on input line 6
-51.
+[2] [3]
+File: figs/framework.pdf Graphic file (type pdf)
+<use figs/framework.pdf>
 
 
-LaTeX Warning: Reference `searchselection' on page 11 undefined on input line 6
-52.
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 162.
 
-[11 <./figs/globalroute-eps-converted-to.pdf>] [12] (prosperctus.bbl
-Underfull \hbox (badness 2799) in paragraph at lines 50--54
-[]\OT1/ptm/m/n/8 T. M. Inc., ``Tire-road in-ter-ac-tion,'' Nat-ick, Mas-sachuse
-tts, United States, 2022. [On-line]. Avail-able:
- []
 
-)
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 162.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 170.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 170.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 170.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 192.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 200.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 200.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 208.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 223.
+
+[4] [5] [6] [7]
+File: figs/spline.eps Graphic file (type eps)
+<figs/spline.eps>
+ [8]
+File: figs/racetrack.eps Graphic file (type eps)
+<figs/racetrack.eps>
+File: figs/sn.pdf Graphic file (type pdf)
+<use figs/sn.pdf>
+ [9] [10]
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 590.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 590.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 590.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 591.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 593.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 596.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 596.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 605.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 606.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 606.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 606.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 624.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 629.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 629.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 629.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 629.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 631.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 631.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 632.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 632.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 632.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 632.
+
+[11]
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 636.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 639.
+
+File: figs/globalroute.eps Graphic file (type eps)
+<figs/globalroute.eps>
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 657.
+
+
+LaTeX Warning: Reference `searchselection' on page 12 undefined on input line 6
+57.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 658.
+
+
+LaTeX Warning: Reference `searchselection' on page 12 undefined on input line 6
+58.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 663.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 663.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 670.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 670.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 670.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 671.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 671.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 697.
+
+[12] (prosperctus.bbl [13])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -920,11 +1467,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[13] (prosperctus.aux)
+[14] (prosperctus.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
+L3 programming layer <2023-06-16>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
@@ -934,40 +1484,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10206 strings out of 475248
- 173112 string characters out of 5757812
- 1943785 words of memory out of 5000000
- 31516 multiletter control sequences out of 15000+600000
- 601589 words of font info for 137 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 69i,21n,117p,1604b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx7.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lixil/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lixil/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lixil/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/lixil/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C
-:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lixil/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/lixil/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/lixil/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/lixil/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
-/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmb8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmr8a.pfb><C:/Users/lixil/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on prosperctus.pdf (13 pages, 483243 bytes).
-PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9763 strings out of 411163
+ 159420 string characters out of 5814242
+ 1879394 words of memory out of 5000000
+ 30122 multiletter control sequences out of 15000+600000
+ 525366 words of font info for 95 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 69i,20n,117p,3075b,560s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on prosperctus.pdf (14 pages).
